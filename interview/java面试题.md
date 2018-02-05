@@ -5,7 +5,7 @@
 ### 一、java基础面试知识点
 
 * java中==和equals和hashCode的区别
-* int-char-long各占多少字节数
+* int、char、long各占多少字节数
 * int与integer的区别
 * 探探对java多态的理解
 * String、StringBuffer、StringBuilder区别
@@ -55,7 +55,7 @@
 * 并发集合了解哪些？
 * 列举java的集合以及集合之间的继承关系
 * 集合类以及集合框架
-* 容器类介绍以及之间的区别（容器类估计很多人没听这个词，Java容器主要可以划分为4个部分：List列表、Set集合、Map映射、工具类（Iterator迭代器、Enumeration枚举类、Arrays和Collections），具体的可以看看这篇博文http://alexyyek.github.io/2015/04/06/Collection/）
+* 容器类介绍以及之间的区别（容器类估计很多人没听这个词，Java容器主要可以划分为4个部分：List列表、Set集合、Map映射、工具类（Iterator迭代器、Enumeration枚举类、Arrays和Collections），具体的可以看看这篇博文 [Java容器类](http://alexyyek.github.io/2015/04/06/Collection/)）
 * List,Set,Map的区别
 * List和Map的实现方式以及存储方式
 * HashMap的实现原理
@@ -135,7 +135,7 @@
 
 ----
 
-## 并发编程有关知识点（这个是一般Android开发用的少的，所以建议多去看看）：
+### 并发编程有关知识点（这个是一般Android开发用的少的，所以建议多去看看）：
 
 平时Android开发中对并发编程可以做得比较少，Thread这个类经常会用到，但是我们想提升自己的话，一定不能停留在表面，,我们也应该去了解一下java的关于线程相关的源码级别的东西。
 

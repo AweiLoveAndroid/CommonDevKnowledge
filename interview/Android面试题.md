@@ -47,8 +47,6 @@ Android面试题除了Android基础之外，更多的问的是一些源码级别
 * 估值器
 * Android中数据存储方式
 
-
-
 ### 二、Android源码相关分析
 
 * Android动画框架实现原理
@@ -81,7 +79,6 @@ Android面试题除了Android基础之外，更多的问的是一些源码级别
 * 封装View的时候怎么知道view的大小
 * RecycleView原理
 * AndroidManifest的作用与理解
-
 
 ### 三、常见的一些原理性问题
 
@@ -127,7 +124,6 @@ Android面试题除了Android基础之外，更多的问的是一些源码级别
 * ListView重用的是什么？
 * Android为什么引入Parcelable？
 * 有没有尝试简化Parcelable的使用？
-* 
 
 ### 四、开发中常见的一些问题
 
@@ -152,8 +148,4 @@ Android面试题除了Android基础之外，更多的问的是一些源码级别
 * 点击事件被拦截，但是想传到下面的View，如何操作？
 * 微信主页面的实现方式
 * 微信上消息小红点的原理
-* 
-
-
-
 * CAS介绍（这是阿里巴巴的面试题，我不是很了解，可以参考博客: [CAS简介](http://blog.csdn.net/jly4758/article/details/46673835)）
