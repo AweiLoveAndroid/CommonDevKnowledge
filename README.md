@@ -7,6 +7,19 @@
 
 [BAT大公司面试题集锦](https://github.com/AweiLoveAndroid/CommonDevKnowledge/blob/master/interview/%E5%A4%A7%E5%85%AC%E5%8F%B8%E9%9D%A2%E8%AF%95%E9%A2%98%E7%9B%AE%E6%B1%87%E6%80%BB.md)
 
+##### [屏幕适配](https://www.jianshu.com/c/b5d1ce82ee2d)
+
+##### 应用角标的实现（待完善）
+
+##### 利用原生api实现分享等功能（待完善）
+
+##### 二维码处理（待完善）
+
+##### Android开发遇到的坑汇总（待完善）
+
+##### Android中的冷门知识点汇总（待完善）
+
+
 ----
 
 # 赞赏
@@ -21,20 +34,22 @@
 
 简书博客：https://www.jianshu.com/u/f408bdadacce
 
+----
+
 # Licence
 
 ```
 Copyright 2018,AWeiLoveAndroid,阿韦
 
-   Licensed under the Apache License, Version 2.0 (the "License");
-   you may not use this file except in compliance with the License.
-   You may obtain a copy of the License at
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
 
        http://www.apache.org/licenses/LICENSE-2.0
 
-   Unless required by applicable law or agreed to in writing, software
-   distributed under the License is distributed on an "AS IS" BASIS,
-   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-   See the License for the specific language governing permissions and
-   limitations under the License.
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
 ```
