@@ -1,81 +1,43 @@
-# 国内一线互联网公司面试题汇总
-
-----
-
-这些题目是网友去百度、小米、乐视、美团、58、猎豹、360、新浪、搜狐等一线互联网公司面试被问到的题目。
-
-熟悉本文中列出的知识点会大大增加通过前两轮技术面试的几率。
-
-欢迎一线公司员工以及网友提交面试题库，欢迎star。
-
-网上的都是按照公司划分的，想找具体某一方面的知识点有点不好找，我这里就根据知识点分门别类的整理了一下，想看哪一块可以快速找到。
-
-### 主要分为以下几部分：
-
->###（一）[java面试题](https://github.com/AweiLoveAndroid/CommonDevKnowledge/blob/master/interview/contents/java%E9%9D%A2%E8%AF%95%E9%A2%98.md)
->
->**（1）java基础面试知识点**
->
->**（2）java深入源码级的面试题（有难度）**
->
->**（3）数据结构**
->
->**（4）线程、多线程和线程池**
->
->**（5）并发编程有关知识点（这个是一般Android开发用的少的，所以建议多去看看）：**
->
->###（二）[Android面试题](https://github.com/AweiLoveAndroid/CommonDevKnowledge/blob/master/interview/contents/Android%E9%9D%A2%E8%AF%95%E9%A2%98.md)
->
->**（1）Android基础知识点**
->
->**（2）Android源码相关分析**
->
->**（3）常见的一些原理性问题**
->
->**（4）开发中常见的一些问题**
->
->###（三）[高端技术面试题](https://github.com/AweiLoveAndroid/CommonDevKnowledge/blob/master/interview/contents/%E9%AB%98%E7%AB%AF%E6%8A%80%E6%9C%AF%E9%9D%A2%E8%AF%95%E9%A2%98.md)
->
->**（1）图片**
->
->**（2）网络和安全机制**
->
->**（3）数据库**
->
->**（4）算法**
->
->**（5）插件化、模块化、组件化、热修复、增量更新、Gradle**
->
->**（6）架构设计和设计模式**
->
->**（7）性能优化**
->
->**（8）NDK、jni、Binder、AIDL、进程通信有关**
->
->**（9）framework层、ROM定制、Ubuntu、Linux之类的问题**
->
->###（四）[非技术性问题&HR问题汇总](https://github.com/AweiLoveAndroid/CommonDevKnowledge/blob/master/interview/contents/%E9%9D%9E%E6%8A%80%E6%9C%AF%E6%80%A7%E9%97%AE%E9%A2%98%26HR%E9%97%AE%E9%A2%98%E6%B1%87%E6%80%BB.md)
->
->**（1）非技术问题**
->
->**（2）HR提出的面试问题**
->
->###（五）[部分面试题解答](https://github.com/AweiLoveAndroid/CommonDevKnowledge/tree/master/interview/answers)
-
-----
-
-### 鸣谢
-
-[阿里、腾讯、百度、华为、京东、搜狗和滴滴最新面试题汇集](https://mp.weixin.qq.com/s?__biz=MzIyMjQ0MTU0NA==&mid=2247484617&idx=1&sn=3734e643d241ac9615424dd44462ee2d&chksm=e82c3deedf5bb4f82e7be0823739774a0a2cf8372284c8409471c2752fea1f367ca3f6857795&mpshare=1&scene=23&srcid=1128DKotEvTe4dheaTextbqp#rd)
-
-[2017下半年，一二线互联网公司Android面试题汇总](https://zhuanlan.zhihu.com/p/30016683)
-
-[2017 年初、阿里、腾讯、百度、华为、京东、搜狗和滴滴面试题汇集（更新篇）](https://zhuanlan.zhihu.com/p/26327485)
-
-[android_interview](https://github.com/LRH1993/android_interview)
-
-[AndroidInterview-Q-A](https://github.com/JackyAndroid/AndroidInterview-Q-A)
-
-
-----
-### 这份面试题整理会持续更新，欢迎`star` 和 `fork`，不过仍有更多内容尚未完善，欢迎大家投稿。
+<div class="output_wrapper" id="output_wrapper_id" style="font-size: 15px; color: rgb(62, 62, 62); line-height: 1.8; word-spacing: 2px; letter-spacing: 2px; font-family: 'Helvetica Neue', Helvetica, 'Hiragino Sans GB', 'Microsoft YaHei', Arial, sans-serif; background-image: linear-gradient(90deg, rgba(50, 0, 0, 0.0470588) 3%, rgba(0, 0, 0, 0) 3%), linear-gradient(360deg, rgba(50, 0, 0, 0.0470588) 3%, rgba(0, 0, 0, 0) 3%); background-size: 20px 20px; background-position: center center;"><h1 id="h" style="color: inherit; line-height: inherit; padding: 0px; margin: 1.6em 0px; font-weight: bold; font-size: 1.6em; border-top: 2px solid rgb(3, 155, 229);"><span style="font-size: inherit; line-height: inherit; margin: 0px; display: inline-block; font-weight: normal; background: rgb(3, 155, 229); color: rgb(255, 255, 255); padding: 3px 10px 0px; border-bottom-right-radius: 3px; border-bottom-left-radius: 4px; border-bottom: 2px solid rgb(0, 96, 100); border-right: 3px solid rgb(0, 96, 100); margin-left: 5px; margin-right: 2px;">国内一线互联网公司面试题汇总</span></h1>
+<hr style="font-size: inherit; color: inherit; line-height: inherit; padding: 0px; height: 8px; margin: 2.5rem 20px; border-radius: 50%; border-top: 3px solid rgb(165, 165, 165);">
+<p style="font-size: inherit; color: inherit; line-height: inherit; padding: 0px; margin: 1.7em 0px;">这些题目是网友去百度、小米、乐视、美团、58、猎豹、360、新浪、搜狐等一线互联网公司面试被问到的题目。</p>
+<p style="font-size: inherit; color: inherit; line-height: inherit; padding: 0px; margin: 1.7em 0px;">熟悉本文中列出的知识点会大大增加通过前两轮技术面试的几率。</p>
+<p style="font-size: inherit; color: inherit; line-height: inherit; padding: 0px; margin: 1.7em 0px;">欢迎一线公司员工以及网友提交面试题库，欢迎star。</p>
+<p style="font-size: inherit; color: inherit; line-height: inherit; padding: 0px; margin: 1.7em 0px;">网上的都是按照公司划分的，想找具体某一方面的知识点有点不好找，我这里就根据知识点分门别类的整理了一下，想看哪一块可以快速找到。</p>
+<h3 id="h-1" style="color: inherit; line-height: inherit; padding: 0px; margin: 1.6em 0px; font-weight: bold; border-bottom: 2px solid rgb(239, 112, 96); font-size: 1.3em;"><span style="font-size: inherit; line-height: inherit; margin: 0px; display: inline-block; font-weight: normal; background: rgb(239, 112, 96); color: rgb(255, 255, 255); padding: 3px 10px 1px; border-top-right-radius: 3px; border-top-left-radius: 3px; margin-right: 3px;">主要分为以下几部分：</span><span style="display: inline-block; vertical-align: bottom; border-bottom: 36px solid rgb(239, 235, 233); border-right: 20px solid transparent;"> </span></h3>
+<blockquote style="line-height: inherit; display: block; padding: 15px 15px 15px 1rem; font-size: 0.9em; margin: 1em 0px; color: rgb(0, 0, 0); border-left: 5px solid rgb(239, 112, 96); background: rgb(239, 235, 233); overflow: auto; word-wrap: normal; word-break: normal;">
+  <h3 id="hjavahttpsgithubcomaweiloveandroidcommondevknowledgeblobmasterinterviewcontentsjavae99da2e8af95e9a298md" style="color: inherit; line-height: inherit; padding: 0px; margin: 1.6em 0px; font-weight: bold; border-bottom: 2px solid rgb(239, 112, 96); font-size: 1.3em;"><span style="font-size: inherit; line-height: inherit; margin: 0px; display: inline-block; font-weight: normal; background: rgb(239, 112, 96); color: rgb(255, 255, 255); padding: 3px 10px 1px; border-top-right-radius: 3px; border-top-left-radius: 3px; margin-right: 3px;">（一）<a href="https://github.com/AweiLoveAndroid/CommonDevKnowledge/blob/master/interview/contents/java%E9%9D%A2%E8%AF%95%E9%A2%98.md" style="font-size: inherit; line-height: inherit; margin: 0px; padding: 0px; text-decoration: none; color: rgb(30, 107, 184); word-wrap: break-word;">java面试题</a></span><span style="display: inline-block; vertical-align: bottom; border-bottom: 36px solid rgb(239, 235, 233); border-right: 20px solid transparent;"> </span></h3>
+  <p style="font-size: inherit; color: inherit; line-height: inherit; padding: 0px; margin: 0px;"><strong style="font-size: inherit; line-height: inherit; margin: 0px; padding: 0px; font-weight: bold; color: rgb(233, 105, 0);">（1）java基础面试知识点</strong></p>
+  <p style="font-size: inherit; color: inherit; line-height: inherit; padding: 0px; margin: 0px;"><strong style="font-size: inherit; line-height: inherit; margin: 0px; padding: 0px; font-weight: bold; color: rgb(233, 105, 0);">（2）java深入源码级的面试题（有难度）</strong></p>
+  <p style="font-size: inherit; color: inherit; line-height: inherit; padding: 0px; margin: 0px;"><strong style="font-size: inherit; line-height: inherit; margin: 0px; padding: 0px; font-weight: bold; color: rgb(233, 105, 0);">（3）数据结构</strong></p>
+  <p style="font-size: inherit; color: inherit; line-height: inherit; padding: 0px; margin: 0px;"><strong style="font-size: inherit; line-height: inherit; margin: 0px; padding: 0px; font-weight: bold; color: rgb(233, 105, 0);">（4）线程、多线程和线程池</strong></p>
+  <p style="font-size: inherit; color: inherit; line-height: inherit; padding: 0px; margin: 0px;"><strong style="font-size: inherit; line-height: inherit; margin: 0px; padding: 0px; font-weight: bold; color: rgb(233, 105, 0);">（5）并发编程有关知识点（这个是一般Android开发用的少的，所以建议多去看看）：</strong></p>
+  <h3 id="handroidhttpsgithubcomaweiloveandroidcommondevknowledgeblobmasterinterviewcontentsandroide99da2e8af95e9a298md" style="color: inherit; line-height: inherit; padding: 0px; margin: 1.6em 0px; font-weight: bold; border-bottom: 2px solid rgb(239, 112, 96); font-size: 1.3em;"><span style="font-size: inherit; line-height: inherit; margin: 0px; display: inline-block; font-weight: normal; background: rgb(239, 112, 96); color: rgb(255, 255, 255); padding: 3px 10px 1px; border-top-right-radius: 3px; border-top-left-radius: 3px; margin-right: 3px;">（二）<a href="https://github.com/AweiLoveAndroid/CommonDevKnowledge/blob/master/interview/contents/Android%E9%9D%A2%E8%AF%95%E9%A2%98.md" style="font-size: inherit; line-height: inherit; margin: 0px; padding: 0px; text-decoration: none; color: rgb(30, 107, 184); word-wrap: break-word;">Android面试题</a></span><span style="display: inline-block; vertical-align: bottom; border-bottom: 36px solid rgb(239, 235, 233); border-right: 20px solid transparent;"> </span></h3>
+  <p style="font-size: inherit; color: inherit; line-height: inherit; padding: 0px; margin: 0px;"><strong style="font-size: inherit; line-height: inherit; margin: 0px; padding: 0px; font-weight: bold; color: rgb(233, 105, 0);">（1）Android基础知识点</strong></p>
+  <p style="font-size: inherit; color: inherit; line-height: inherit; padding: 0px; margin: 0px;"><strong style="font-size: inherit; line-height: inherit; margin: 0px; padding: 0px; font-weight: bold; color: rgb(233, 105, 0);">（2）Android源码相关分析</strong></p>
+  <p style="font-size: inherit; color: inherit; line-height: inherit; padding: 0px; margin: 0px;"><strong style="font-size: inherit; line-height: inherit; margin: 0px; padding: 0px; font-weight: bold; color: rgb(233, 105, 0);">（3）常见的一些原理性问题</strong></p>
+  <p style="font-size: inherit; color: inherit; line-height: inherit; padding: 0px; margin: 0px;"><strong style="font-size: inherit; line-height: inherit; margin: 0px; padding: 0px; font-weight: bold; color: rgb(233, 105, 0);">（4）开发中常见的一些问题</strong></p>
+  <h3 id="hhttpsgithubcomaweiloveandroidcommondevknowledgeblobmasterinterviewcontentse9ab98e7abafe68a80e69cafe99da2e8af95e9a298md" style="color: inherit; line-height: inherit; padding: 0px; margin: 1.6em 0px; font-weight: bold; border-bottom: 2px solid rgb(239, 112, 96); font-size: 1.3em;"><span style="font-size: inherit; line-height: inherit; margin: 0px; display: inline-block; font-weight: normal; background: rgb(239, 112, 96); color: rgb(255, 255, 255); padding: 3px 10px 1px; border-top-right-radius: 3px; border-top-left-radius: 3px; margin-right: 3px;">（三）<a href="https://github.com/AweiLoveAndroid/CommonDevKnowledge/blob/master/interview/contents/%E9%AB%98%E7%AB%AF%E6%8A%80%E6%9C%AF%E9%9D%A2%E8%AF%95%E9%A2%98.md" style="font-size: inherit; line-height: inherit; margin: 0px; padding: 0px; text-decoration: none; color: rgb(30, 107, 184); word-wrap: break-word;">高端技术面试题</a></span><span style="display: inline-block; vertical-align: bottom; border-bottom: 36px solid rgb(239, 235, 233); border-right: 20px solid transparent;"> </span></h3>
+  <p style="font-size: inherit; color: inherit; line-height: inherit; padding: 0px; margin: 0px;"><strong style="font-size: inherit; line-height: inherit; margin: 0px; padding: 0px; font-weight: bold; color: rgb(233, 105, 0);">（1）图片</strong></p>
+  <p style="font-size: inherit; color: inherit; line-height: inherit; padding: 0px; margin: 0px;"><strong style="font-size: inherit; line-height: inherit; margin: 0px; padding: 0px; font-weight: bold; color: rgb(233, 105, 0);">（2）网络和安全机制</strong></p>
+  <p style="font-size: inherit; color: inherit; line-height: inherit; padding: 0px; margin: 0px;"><strong style="font-size: inherit; line-height: inherit; margin: 0px; padding: 0px; font-weight: bold; color: rgb(233, 105, 0);">（3）数据库</strong></p>
+  <p style="font-size: inherit; color: inherit; line-height: inherit; padding: 0px; margin: 0px;"><strong style="font-size: inherit; line-height: inherit; margin: 0px; padding: 0px; font-weight: bold; color: rgb(233, 105, 0);">（4）算法</strong></p>
+  <p style="font-size: inherit; color: inherit; line-height: inherit; padding: 0px; margin: 0px;"><strong style="font-size: inherit; line-height: inherit; margin: 0px; padding: 0px; font-weight: bold; color: rgb(233, 105, 0);">（5）插件化、模块化、组件化、热修复、增量更新、Gradle</strong></p>
+  <p style="font-size: inherit; color: inherit; line-height: inherit; padding: 0px; margin: 0px;"><strong style="font-size: inherit; line-height: inherit; margin: 0px; padding: 0px; font-weight: bold; color: rgb(233, 105, 0);">（6）架构设计和设计模式</strong></p>
+  <p style="font-size: inherit; color: inherit; line-height: inherit; padding: 0px; margin: 0px;"><strong style="font-size: inherit; line-height: inherit; margin: 0px; padding: 0px; font-weight: bold; color: rgb(233, 105, 0);">（7）性能优化</strong></p>
+  <p style="font-size: inherit; color: inherit; line-height: inherit; padding: 0px; margin: 0px;"><strong style="font-size: inherit; line-height: inherit; margin: 0px; padding: 0px; font-weight: bold; color: rgb(233, 105, 0);">（8）NDK、jni、Binder、AIDL、进程通信有关</strong></p>
+  <p style="font-size: inherit; color: inherit; line-height: inherit; padding: 0px; margin: 0px;"><strong style="font-size: inherit; line-height: inherit; margin: 0px; padding: 0px; font-weight: bold; color: rgb(233, 105, 0);">（9）framework层、ROM定制、Ubuntu、Linux之类的问题</strong></p>
+  <h3 id="hhrhttpsgithubcomaweiloveandroidcommondevknowledgeblobmasterinterviewcontentse99d9ee68a80e69cafe680a7e997aee9a29826hre997aee9a298e6b187e680bbmd" style="color: inherit; line-height: inherit; padding: 0px; margin: 1.6em 0px; font-weight: bold; border-bottom: 2px solid rgb(239, 112, 96); font-size: 1.3em;"><span style="font-size: inherit; line-height: inherit; margin: 0px; display: inline-block; font-weight: normal; background: rgb(239, 112, 96); color: rgb(255, 255, 255); padding: 3px 10px 1px; border-top-right-radius: 3px; border-top-left-radius: 3px; margin-right: 3px;">（四）<a href="https://github.com/AweiLoveAndroid/CommonDevKnowledge/blob/master/interview/contents/%E9%9D%9E%E6%8A%80%E6%9C%AF%E6%80%A7%E9%97%AE%E9%A2%98%26HR%E9%97%AE%E9%A2%98%E6%B1%87%E6%80%BB.md" style="font-size: inherit; line-height: inherit; margin: 0px; padding: 0px; text-decoration: none; color: rgb(30, 107, 184); word-wrap: break-word;">非技术性问题&amp;HR问题汇总</a></span><span style="display: inline-block; vertical-align: bottom; border-bottom: 36px solid rgb(239, 235, 233); border-right: 20px solid transparent;"> </span></h3>
+  <p style="font-size: inherit; color: inherit; line-height: inherit; padding: 0px; margin: 0px;"><strong style="font-size: inherit; line-height: inherit; margin: 0px; padding: 0px; font-weight: bold; color: rgb(233, 105, 0);">（1）非技术问题</strong></p>
+  <p style="font-size: inherit; color: inherit; line-height: inherit; padding: 0px; margin: 0px;"><strong style="font-size: inherit; line-height: inherit; margin: 0px; padding: 0px; font-weight: bold; color: rgb(233, 105, 0);">（2）HR提出的面试问题</strong></p>
+  <h3 id="hhttpsgithubcomaweiloveandroidcommondevknowledgetreemasterinterviewanswers" style="color: inherit; line-height: inherit; padding: 0px; margin: 1.6em 0px; font-weight: bold; border-bottom: 2px solid rgb(239, 112, 96); font-size: 1.3em;"><span style="font-size: inherit; line-height: inherit; margin: 0px; display: inline-block; font-weight: normal; background: rgb(239, 112, 96); color: rgb(255, 255, 255); padding: 3px 10px 1px; border-top-right-radius: 3px; border-top-left-radius: 3px; margin-right: 3px;">（五）<a href="https://github.com/AweiLoveAndroid/CommonDevKnowledge/tree/master/interview/answers" style="font-size: inherit; line-height: inherit; margin: 0px; padding: 0px; text-decoration: none; color: rgb(30, 107, 184); word-wrap: break-word;">部分面试题解答</a></span><span style="display: inline-block; vertical-align: bottom; border-bottom: 36px solid rgb(239, 235, 233); border-right: 20px solid transparent;"> </span></h3>
+</blockquote>
+<hr style="font-size: inherit; color: inherit; line-height: inherit; padding: 0px; height: 8px; margin: 2.5rem 20px; border-radius: 50%; border-top: 3px solid rgb(165, 165, 165);">
+<h3 id="h-2" style="color: inherit; line-height: inherit; padding: 0px; margin: 1.6em 0px; font-weight: bold; border-bottom: 2px solid rgb(239, 112, 96); font-size: 1.3em;"><span style="font-size: inherit; line-height: inherit; margin: 0px; display: inline-block; font-weight: normal; background: rgb(239, 112, 96); color: rgb(255, 255, 255); padding: 3px 10px 1px; border-top-right-radius: 3px; border-top-left-radius: 3px; margin-right: 3px;">鸣谢</span><span style="display: inline-block; vertical-align: bottom; border-bottom: 36px solid rgb(239, 235, 233); border-right: 20px solid transparent;"> </span></h3>
+<p style="font-size: inherit; color: inherit; line-height: inherit; padding: 0px; margin: 1.7em 0px;"><a href="https://mp.weixin.qq.com/s?__biz=MzIyMjQ0MTU0NA==&amp;mid=2247484617&amp;idx=1&amp;sn=3734e643d241ac9615424dd44462ee2d&amp;chksm=e82c3deedf5bb4f82e7be0823739774a0a2cf8372284c8409471c2752fea1f367ca3f6857795&amp;mpshare=1&amp;scene=23&amp;srcid=1128DKotEvTe4dheaTextbqp#rd" style="font-size: inherit; line-height: inherit; margin: 0px; padding: 0px; text-decoration: none; color: rgb(30, 107, 184); word-wrap: break-word;">阿里、腾讯、百度、华为、京东、搜狗和滴滴最新面试题汇集</a></p>
+<p style="font-size: inherit; color: inherit; line-height: inherit; padding: 0px; margin: 1.7em 0px;"><a href="https://zhuanlan.zhihu.com/p/30016683" style="font-size: inherit; line-height: inherit; margin: 0px; padding: 0px; text-decoration: none; color: rgb(30, 107, 184); word-wrap: break-word;">2017下半年，一二线互联网公司Android面试题汇总</a></p>
+<p style="font-size: inherit; color: inherit; line-height: inherit; padding: 0px; margin: 1.7em 0px;"><a href="https://zhuanlan.zhihu.com/p/26327485" style="font-size: inherit; line-height: inherit; margin: 0px; padding: 0px; text-decoration: none; color: rgb(30, 107, 184); word-wrap: break-word;">2017 年初、阿里、腾讯、百度、华为、京东、搜狗和滴滴面试题汇集（更新篇）</a></p>
+<p style="font-size: inherit; color: inherit; line-height: inherit; padding: 0px; margin: 1.7em 0px;"><a href="https://github.com/LRH1993/android_interview" style="font-size: inherit; line-height: inherit; margin: 0px; padding: 0px; text-decoration: none; color: rgb(30, 107, 184); word-wrap: break-word;">android_interview</a></p>
+<p style="font-size: inherit; color: inherit; line-height: inherit; padding: 0px; margin: 1.7em 0px;"><a href="https://github.com/JackyAndroid/AndroidInterview-Q-A" style="font-size: inherit; line-height: inherit; margin: 0px; padding: 0px; text-decoration: none; color: rgb(30, 107, 184); word-wrap: break-word;">AndroidInterview-Q-A</a></p>
+<hr style="font-size: inherit; color: inherit; line-height: inherit; padding: 0px; height: 8px; margin: 2.5rem 20px; border-radius: 50%; border-top: 3px solid rgb(165, 165, 165);">
+<h3 id="hstarfork" style="color: inherit; line-height: inherit; padding: 0px; margin: 1.6em 0px; font-weight: bold; border-bottom: 2px solid rgb(239, 112, 96); font-size: 1.3em;"><span style="font-size: inherit; line-height: inherit; margin: 0px; display: inline-block; font-weight: normal; background: rgb(239, 112, 96); color: rgb(255, 255, 255); padding: 3px 10px 1px; border-top-right-radius: 3px; border-top-left-radius: 3px; margin-right: 3px;">这份面试题整理会持续更新，欢迎<code style="font-size: inherit; line-height: inherit; word-wrap: break-word; padding: 2px 4px; border-radius: 4px; margin: 0px 2px; color: rgb(248, 35, 117); background: rgb(248, 248, 248);">star</code> 和 <code style="font-size: inherit; line-height: inherit; word-wrap: break-word; padding: 2px 4px; border-radius: 4px; margin: 0px 2px; color: rgb(248, 35, 117); background: rgb(248, 248, 248);">fork</code>，不过仍有更多内容尚未完善，欢迎大家投稿。</span><span style="display: inline-block; vertical-align: bottom; border-bottom: 36px solid rgb(239, 235, 233); border-right: 20px solid transparent;"> </span></h3></div>
