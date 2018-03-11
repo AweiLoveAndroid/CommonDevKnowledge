@@ -148,4 +148,5 @@ Android面试题除了Android基础之外，更多的问的是一些源码级别
 * 点击事件被拦截，但是想传到下面的View，如何操作？
 * 微信主页面的实现方式
 * 微信上消息小红点的原理
-* CAS介绍（这是阿里巴巴的面试题，我不是很了解，可以参考博客: [CAS简介](http://blog.csdn.net/jly4758/article/details/46673835)）
+* CAS介绍
+感觉面试的问题是compare and swap
