@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html>
+<head>  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1,user-scalable=0">
+  <meta name="author" content="微信公众号：颜家大少">
+  <meta name="email" content="3056432@qq.com">
+  <meta name="description" content="一个Markdown在线转换工具，让Markdown内容，不需作任何调整就能同时在微信公众号、博客园、掘金、csdn等平台正确显示当前预览的效果">
+  <title>Android开发遇到的那些坑</title>  
+  <style type="text/css" id="markdown_preview_css"> 
+ .output_wrapper pre code{font-family: Consolas, Inconsolata, Courier, monospace; display: block !important; white-space: pre !important; word-wrap: normal !important; word-break: normal !important;  overflow: auto !important;}  
+.output_wrapper figcaption { margin-top: 10px; text-align: center; color: rgb(153, 153, 153); font-size: 0.7em; }
+.output_wrapper pre code .linenum { padding-right: 20px; word-spacing: 0px; }
+.task-list-list { list-style-type: none; }
+.task-list-list.checked { color: rgb(62, 62, 62); }
+.task-list-list.uncheck { color: rgb(191, 193, 191); }
+.task-list-list .icon_uncheck, .task-list-list .icon_check { display: inline-block; vertical-align: middle; margin-right: 10px; }
+.task-list-list .icon_check::before { content: "√"; border: 2px solid rgb(62, 62, 62); color: red; }
+.task-list-list .icon_uncheck::before { content: "x"; border: 2px solid rgb(191, 193, 191); color: rgb(191, 193, 191); }
+.task-list-list .icon_check::before, .task-list-list .icon_uncheck::before { padding: 2px 8px 2px 5px; border-radius: 5px; }
+.katex-display { display: block; margin: 1em 0px; text-align: center; font-size: 1.5em; }
+.katex-display > .katex { display: inline-block; text-align: initial; }
+.katex { font-family: Consolas, Inconsolata, Courier, monospace; line-height: 1.2; white-space: nowrap; text-indent: 0px; text-rendering: auto; font-size: 1em; }
+.katex * { }
+.katex .katex-html { display: inline-block; }
+.katex .katex-mathml { position: absolute; clip: rect(1px 1px 1px 1px); padding: 0px; border: 0px; height: 1px; width: 1px; overflow: hidden; }
+.katex .base { position: relative; display: inline-block; }
+.katex .strut { display: inline-block; }
+.katex .mathrm { font-style: normal; }
+.katex .textit { font-style: italic; }
+.katex .mathit { font-style: italic; }
+.katex .mathbf { font-weight: bold; }
+.katex .amsrm { }
+.katex .mathbb { }
+.katex .mathcal { }
+.katex .mathfrak { }
+.katex .mathtt { }
+.katex .mathscr { }
+.katex .mathsf { }
+.katex .mainit { font-style: italic; }
+.katex .mainrm { font-style: normal; }
+.katex .mord + .mop { margin-left: 0.16667em; }
+.katex .mord + .mbin { margin-left: 0.22222em; }
+.katex .mord + .mrel { margin-left: 0.27778em; }
+.katex .mord + .minner { margin-left: 0.16667em; }
+.katex .mop + .mord { margin-left: 0.16667em; }
+.katex .mop + .mop { margin-left: 0.16667em; }
+.katex .mop + .mrel { margin-left: 0.27778em; }
+.katex .mop + .minner { margin-left: 0.16667em; }
+.katex .mbin + .mord { margin-left: 0.22222em; }
+.katex .mbin + .mop { margin-left: 0.22222em; }
+.katex .mbin + .mopen { margin-left: 0.22222em; }
+.katex .mbin + .minner { margin-left: 0.22222em; }
+.katex .mrel + .mord { margin-left: 0.27778em; }
+.katex .mrel + .mop { margin-left: 0.27778em; }
+.katex .mrel + .mopen { margin-left: 0.27778em; }
+.katex .mrel + .minner { margin-left: 0.27778em; }
+.katex .mclose + .mop { margin-left: 0.16667em; }
+.katex .mclose + .mbin { margin-left: 0.22222em; }
+.katex .mclose + .mrel { margin-left: 0.27778em; }
+.katex .mclose + .minner { margin-left: 0.16667em; }
+.katex .mpunct + .mord { margin-left: 0.16667em; }
+.katex .mpunct + .mop { margin-left: 0.16667em; }
+.katex .mpunct + .mrel { margin-left: 0.16667em; }
+.katex .mpunct + .mopen { margin-left: 0.16667em; }
+.katex .mpunct + .mclose { margin-left: 0.16667em; }
+.katex .mpunct + .mpunct { margin-left: 0.16667em; }
+.katex .mpunct + .minner { margin-left: 0.16667em; }
+.katex .minner + .mord { margin-left: 0.16667em; }
+.katex .minner + .mop { margin-left: 0.16667em; }
+.katex .minner + .mbin { margin-left: 0.22222em; }
+.katex .minner + .mrel { margin-left: 0.27778em; }
+.katex .minner + .mopen { margin-left: 0.16667em; }
+.katex .minner + .mpunct { margin-left: 0.16667em; }
+.katex .minner + .minner { margin-left: 0.16667em; }
+.katex .mord.mtight { margin-left: 0px; }
+.katex .mop.mtight { margin-left: 0px; }
+.katex .mbin.mtight { margin-left: 0px; }
+.katex .mrel.mtight { margin-left: 0px; }
+.katex .mopen.mtight { margin-left: 0px; }
+.katex .mclose.mtight { margin-left: 0px; }
+.katex .mpunct.mtight { margin-left: 0px; }
+.katex .minner.mtight { margin-left: 0px; }
+.katex .mord + .mop.mtight { margin-left: 0.16667em; }
+.katex .mop + .mord.mtight { margin-left: 0.16667em; }
+.katex .mop + .mop.mtight { margin-left: 0.16667em; }
+.katex .mclose + .mop.mtight { margin-left: 0.16667em; }
+.katex .minner + .mop.mtight { margin-left: 0.16667em; }
+.katex .vlist-t { display: inline-table; table-layout: fixed; }
+.katex .vlist-r { display: table-row; }
+.katex .vlist { display: table-cell; vertical-align: bottom; position: relative; }
+.katex .vlist > span { display: block; height: 0px; position: relative; }
+.katex .vlist > span > span { display: inline-block; }
+.katex .vlist > span > .pstrut { overflow: hidden; width: 0px; }
+.katex .vlist-t2 { margin-right: -2px; }
+.katex .vlist-s { display: table-cell; vertical-align: bottom; font-size: 1px; width: 2px; }
+.katex .msupsub { text-align: left; }
+.katex .mfrac > span > span { text-align: center; }
+.katex .mfrac .frac-line { display: inline-block; width: 100%; }
+@media screen { 
+  .katex .mfrac .frac-line, .katex .overline .overline-line, .katex .underline .underline-line { min-height: 1px; }
+}
+@media screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi) { 
+  .katex .mfrac .frac-line, .katex .overline .overline-line, .katex .underline .underline-line { min-height: 0.5px; }
+}
+.katex .mspace { display: inline-block; }
+.katex .mspace.negativethinspace { margin-left: -0.16667em; }
+.katex .mspace.thinspace { width: 0.16667em; }
+.katex .mspace.negativemediumspace { margin-left: -0.22222em; }
+.katex .mspace.mediumspace { width: 0.22222em; }
+.katex .mspace.thickspace { width: 0.27778em; }
+.katex .mspace.sixmuspace { width: 0.333333em; }
+.katex .mspace.eightmuspace { width: 0.444444em; }
+.katex .mspace.enspace { width: 0.5em; }
+.katex .mspace.twelvemuspace { width: 0.666667em; }
+.katex .mspace.quad { width: 1em; }
+.katex .mspace.qquad { width: 2em; }
+.katex .llap, .katex .rlap, .katex .clap { width: 0px; position: relative; }
+.katex .llap > .inner, .katex .rlap > .inner, .katex .clap > .inner { position: absolute; }
+.katex .llap > .fix, .katex .rlap > .fix, .katex .clap > .fix { display: inline-block; }
+.katex .llap > .inner { right: 0px; }
+.katex .rlap > .inner, .katex .clap > .inner { left: 0px; }
+.katex .clap > .inner > span { margin-left: -50%; margin-right: 50%; }
+.katex .katex-logo .a { font-size: 0.75em; margin-left: -0.32em; position: relative; top: -0.2em; }
+.katex .katex-logo .t { margin-left: -0.23em; }
+.katex .katex-logo .e { margin-left: -0.1667em; position: relative; top: 0.2155em; }
+.katex .katex-logo .x { margin-left: -0.125em; }
+.katex .rule { display: inline-block; border: 0px solid; position: relative; }
+.katex .overline .overline-line, .katex .underline .underline-line { display: inline-block; width: 100%; }
+.katex .sqrt > .root { margin-left: 0.277778em; margin-right: -0.555556em; }
+.katex .sizing, .katex .fontsize-ensurer { display: inline-block; }
+.katex .sizing.reset-size1.size1, .katex .fontsize-ensurer.reset-size1.size1 { font-size: 1em; }
+.katex .sizing.reset-size1.size2, .katex .fontsize-ensurer.reset-size1.size2 { font-size: 1.2em; }
+.katex .sizing.reset-size1.size3, .katex .fontsize-ensurer.reset-size1.size3 { font-size: 1.4em; }
+.katex .sizing.reset-size1.size4, .katex .fontsize-ensurer.reset-size1.size4 { font-size: 1.6em; }
+.katex .sizing.reset-size1.size5, .katex .fontsize-ensurer.reset-size1.size5 { font-size: 1.8em; }
+.katex .sizing.reset-size1.size6, .katex .fontsize-ensurer.reset-size1.size6 { font-size: 2em; }
+.katex .sizing.reset-size1.size7, .katex .fontsize-ensurer.reset-size1.size7 { font-size: 2.4em; }
+.katex .sizing.reset-size1.size8, .katex .fontsize-ensurer.reset-size1.size8 { font-size: 2.88em; }
+.katex .sizing.reset-size1.size9, .katex .fontsize-ensurer.reset-size1.size9 { font-size: 3.456em; }
+.katex .sizing.reset-size1.size10, .katex .fontsize-ensurer.reset-size1.size10 { font-size: 4.148em; }
+.katex .sizing.reset-size1.size11, .katex .fontsize-ensurer.reset-size1.size11 { font-size: 4.976em; }
+.katex .sizing.reset-size2.size1, .katex .fontsize-ensurer.reset-size2.size1 { font-size: 0.833333em; }
+.katex .sizing.reset-size2.size2, .katex .fontsize-ensurer.reset-size2.size2 { font-size: 1em; }
+.katex .sizing.reset-size2.size3, .katex .fontsize-ensurer.reset-size2.size3 { font-size: 1.16667em; }
+.katex .sizing.reset-size2.size4, .katex .fontsize-ensurer.reset-size2.size4 { font-size: 1.33333em; }
+.katex .sizing.reset-size2.size5, .katex .fontsize-ensurer.reset-size2.size5 { font-size: 1.5em; }
+.katex .sizing.reset-size2.size6, .katex .fontsize-ensurer.reset-size2.size6 { font-size: 1.66667em; }
+.katex .sizing.reset-size2.size7, .katex .fontsize-ensurer.reset-size2.size7 { font-size: 2em; }
+.katex .sizing.reset-size2.size8, .katex .fontsize-ensurer.reset-size2.size8 { font-size: 2.4em; }
+.katex .sizing.reset-size2.size9, .katex .fontsize-ensurer.reset-size2.size9 { font-size: 2.88em; }
+.katex .sizing.reset-size2.size10, .katex .fontsize-ensurer.reset-size2.size10 { font-size: 3.45667em; }
+.katex .sizing.reset-size2.size11, .katex .fontsize-ensurer.reset-size2.size11 { font-size: 4.14667em; }
+.katex .sizing.reset-size3.size1, .katex .fontsize-ensurer.reset-size3.size1 { font-size: 0.714286em; }
+.katex .sizing.reset-size3.size2, .katex .fontsize-ensurer.reset-size3.size2 { font-size: 0.857143em; }
+.katex .sizing.reset-size3.size3, .katex .fontsize-ensurer.reset-size3.size3 { font-size: 1em; }
+.katex .sizing.reset-size3.size4, .katex .fontsize-ensurer.reset-size3.size4 { font-size: 1.14286em; }
+.katex .sizing.reset-size3.size5, .katex .fontsize-ensurer.reset-size3.size5 { font-size: 1.28571em; }
+.katex .sizing.reset-size3.size6, .katex .fontsize-ensurer.reset-size3.size6 { font-size: 1.42857em; }
+.katex .sizing.reset-size3.size7, .katex .fontsize-ensurer.reset-size3.size7 { font-size: 1.71429em; }
+.katex .sizing.reset-size3.size8, .katex .fontsize-ensurer.reset-size3.size8 { font-size: 2.05714em; }
+.katex .sizing.reset-size3.size9, .katex .fontsize-ensurer.reset-size3.size9 { font-size: 2.46857em; }
+.katex .sizing.reset-size3.size10, .katex .fontsize-ensurer.reset-size3.size10 { font-size: 2.96286em; }
+.katex .sizing.reset-size3.size11, .katex .fontsize-ensurer.reset-size3.size11 { font-size: 3.55429em; }
+.katex .sizing.reset-size4.size1, .katex .fontsize-ensurer.reset-size4.size1 { font-size: 0.625em; }
+.katex .sizing.reset-size4.size2, .katex .fontsize-ensurer.reset-size4.size2 { font-size: 0.75em; }
+.katex .sizing.reset-size4.size3, .katex .fontsize-ensurer.reset-size4.size3 { font-size: 0.875em; }
+.katex .sizing.reset-size4.size4, .katex .fontsize-ensurer.reset-size4.size4 { font-size: 1em; }
+.katex .sizing.reset-size4.size5, .katex .fontsize-ensurer.reset-size4.size5 { font-size: 1.125em; }
+.katex .sizing.reset-size4.size6, .katex .fontsize-ensurer.reset-size4.size6 { font-size: 1.25em; }
+.katex .sizing.reset-size4.size7, .katex .fontsize-ensurer.reset-size4.size7 { font-size: 1.5em; }
+.katex .sizing.reset-size4.size8, .katex .fontsize-ensurer.reset-size4.size8 { font-size: 1.8em; }
+.katex .sizing.reset-size4.size9, .katex .fontsize-ensurer.reset-size4.size9 { font-size: 2.16em; }
+.katex .sizing.reset-size4.size10, .katex .fontsize-ensurer.reset-size4.size10 { font-size: 2.5925em; }
+.katex .sizing.reset-size4.size11, .katex .fontsize-ensurer.reset-size4.size11 { font-size: 3.11em; }
+.katex .sizing.reset-size5.size1, .katex .fontsize-ensurer.reset-size5.size1 { font-size: 0.555556em; }
+.katex .sizing.reset-size5.size2, .katex .fontsize-ensurer.reset-size5.size2 { font-size: 0.666667em; }
+.katex .sizing.reset-size5.size3, .katex .fontsize-ensurer.reset-size5.size3 { font-size: 0.777778em; }
+.katex .sizing.reset-size5.size4, .katex .fontsize-ensurer.reset-size5.size4 { font-size: 0.888889em; }
+.katex .sizing.reset-size5.size5, .katex .fontsize-ensurer.reset-size5.size5 { font-size: 1em; }
+.katex .sizing.reset-size5.size6, .katex .fontsize-ensurer.reset-size5.size6 { font-size: 1.11111em; }
+.katex .sizing.reset-size5.size7, .katex .fontsize-ensurer.reset-size5.size7 { font-size: 1.33333em; }
+.katex .sizing.reset-size5.size8, .katex .fontsize-ensurer.reset-size5.size8 { font-size: 1.6em; }
+.katex .sizing.reset-size5.size9, .katex .fontsize-ensurer.reset-size5.size9 { font-size: 1.92em; }
+.katex .sizing.reset-size5.size10, .katex .fontsize-ensurer.reset-size5.size10 { font-size: 2.30444em; }
+.katex .sizing.reset-size5.size11, .katex .fontsize-ensurer.reset-size5.size11 { font-size: 2.76444em; }
+.katex .sizing.reset-size6.size1, .katex .fontsize-ensurer.reset-size6.size1 { font-size: 0.5em; }
+.katex .sizing.reset-size6.size2, .katex .fontsize-ensurer.reset-size6.size2 { font-size: 0.6em; }
+.katex .sizing.reset-size6.size3, .katex .fontsize-ensurer.reset-size6.size3 { font-size: 0.7em; }
+.katex .sizing.reset-size6.size4, .katex .fontsize-ensurer.reset-size6.size4 { font-size: 0.8em; }
+.katex .sizing.reset-size6.size5, .katex .fontsize-ensurer.reset-size6.size5 { font-size: 0.9em; }
+.katex .sizing.reset-size6.size6, .katex .fontsize-ensurer.reset-size6.size6 { font-size: 1em; }
+.katex .sizing.reset-size6.size7, .katex .fontsize-ensurer.reset-size6.size7 { font-size: 1.2em; }
+.katex .sizing.reset-size6.size8, .katex .fontsize-ensurer.reset-size6.size8 { font-size: 1.44em; }
+.katex .sizing.reset-size6.size9, .katex .fontsize-ensurer.reset-size6.size9 { font-size: 1.728em; }
+.katex .sizing.reset-size6.size10, .katex .fontsize-ensurer.reset-size6.size10 { font-size: 2.074em; }
+.katex .sizing.reset-size6.size11, .katex .fontsize-ensurer.reset-size6.size11 { font-size: 2.488em; }
+.katex .sizing.reset-size7.size1, .katex .fontsize-ensurer.reset-size7.size1 { font-size: 0.416667em; }
+.katex .sizing.reset-size7.size2, .katex .fontsize-ensurer.reset-size7.size2 { font-size: 0.5em; }
+.katex .sizing.reset-size7.size3, .katex .fontsize-ensurer.reset-size7.size3 { font-size: 0.583333em; }
+.katex .sizing.reset-size7.size4, .katex .fontsize-ensurer.reset-size7.size4 { font-size: 0.666667em; }
+.katex .sizing.reset-size7.size5, .katex .fontsize-ensurer.reset-size7.size5 { font-size: 0.75em; }
+.katex .sizing.reset-size7.size6, .katex .fontsize-ensurer.reset-size7.size6 { font-size: 0.833333em; }
+.katex .sizing.reset-size7.size7, .katex .fontsize-ensurer.reset-size7.size7 { font-size: 1em; }
+.katex .sizing.reset-size7.size8, .katex .fontsize-ensurer.reset-size7.size8 { font-size: 1.2em; }
+.katex .sizing.reset-size7.size9, .katex .fontsize-ensurer.reset-size7.size9 { font-size: 1.44em; }
+.katex .sizing.reset-size7.size10, .katex .fontsize-ensurer.reset-size7.size10 { font-size: 1.72833em; }
+.katex .sizing.reset-size7.size11, .katex .fontsize-ensurer.reset-size7.size11 { font-size: 2.07333em; }
+.katex .sizing.reset-size8.size1, .katex .fontsize-ensurer.reset-size8.size1 { font-size: 0.347222em; }
+.katex .sizing.reset-size8.size2, .katex .fontsize-ensurer.reset-size8.size2 { font-size: 0.416667em; }
+.katex .sizing.reset-size8.size3, .katex .fontsize-ensurer.reset-size8.size3 { font-size: 0.486111em; }
+.katex .sizing.reset-size8.size4, .katex .fontsize-ensurer.reset-size8.size4 { font-size: 0.555556em; }
+.katex .sizing.reset-size8.size5, .katex .fontsize-ensurer.reset-size8.size5 { font-size: 0.625em; }
+.katex .sizing.reset-size8.size6, .katex .fontsize-ensurer.reset-size8.size6 { font-size: 0.694444em; }
+.katex .sizing.reset-size8.size7, .katex .fontsize-ensurer.reset-size8.size7 { font-size: 0.833333em; }
+.katex .sizing.reset-size8.size8, .katex .fontsize-ensurer.reset-size8.size8 { font-size: 1em; }
+.katex .sizing.reset-size8.size9, .katex .fontsize-ensurer.reset-size8.size9 { font-size: 1.2em; }
+.katex .sizing.reset-size8.size10, .katex .fontsize-ensurer.reset-size8.size10 { font-size: 1.44028em; }
+.katex .sizing.reset-size8.size11, .katex .fontsize-ensurer.reset-size8.size11 { font-size: 1.72778em; }
+.katex .sizing.reset-size9.size1, .katex .fontsize-ensurer.reset-size9.size1 { font-size: 0.289352em; }
+.katex .sizing.reset-size9.size2, .katex .fontsize-ensurer.reset-size9.size2 { font-size: 0.347222em; }
+.katex .sizing.reset-size9.size3, .katex .fontsize-ensurer.reset-size9.size3 { font-size: 0.405093em; }
+.katex .sizing.reset-size9.size4, .katex .fontsize-ensurer.reset-size9.size4 { font-size: 0.462963em; }
+.katex .sizing.reset-size9.size5, .katex .fontsize-ensurer.reset-size9.size5 { font-size: 0.520833em; }
+.katex .sizing.reset-size9.size6, .katex .fontsize-ensurer.reset-size9.size6 { font-size: 0.578704em; }
+.katex .sizing.reset-size9.size7, .katex .fontsize-ensurer.reset-size9.size7 { font-size: 0.694444em; }
+.katex .sizing.reset-size9.size8, .katex .fontsize-ensurer.reset-size9.size8 { font-size: 0.833333em; }
+.katex .sizing.reset-size9.size9, .katex .fontsize-ensurer.reset-size9.size9 { font-size: 1em; }
+.katex .sizing.reset-size9.size10, .katex .fontsize-ensurer.reset-size9.size10 { font-size: 1.20023em; }
+.katex .sizing.reset-size9.size11, .katex .fontsize-ensurer.reset-size9.size11 { font-size: 1.43981em; }
+.katex .sizing.reset-size10.size1, .katex .fontsize-ensurer.reset-size10.size1 { font-size: 0.24108em; }
+.katex .sizing.reset-size10.size2, .katex .fontsize-ensurer.reset-size10.size2 { font-size: 0.289296em; }
+.katex .sizing.reset-size10.size3, .katex .fontsize-ensurer.reset-size10.size3 { font-size: 0.337512em; }
+.katex .sizing.reset-size10.size4, .katex .fontsize-ensurer.reset-size10.size4 { font-size: 0.385728em; }
+.katex .sizing.reset-size10.size5, .katex .fontsize-ensurer.reset-size10.size5 { font-size: 0.433944em; }
+.katex .sizing.reset-size10.size6, .katex .fontsize-ensurer.reset-size10.size6 { font-size: 0.48216em; }
+.katex .sizing.reset-size10.size7, .katex .fontsize-ensurer.reset-size10.size7 { font-size: 0.578592em; }
+.katex .sizing.reset-size10.size8, .katex .fontsize-ensurer.reset-size10.size8 { font-size: 0.694311em; }
+.katex .sizing.reset-size10.size9, .katex .fontsize-ensurer.reset-size10.size9 { font-size: 0.833173em; }
+.katex .sizing.reset-size10.size10, .katex .fontsize-ensurer.reset-size10.size10 { font-size: 1em; }
+.katex .sizing.reset-size10.size11, .katex .fontsize-ensurer.reset-size10.size11 { font-size: 1.19961em; }
+.katex .sizing.reset-size11.size1, .katex .fontsize-ensurer.reset-size11.size1 { font-size: 0.200965em; }
+.katex .sizing.reset-size11.size2, .katex .fontsize-ensurer.reset-size11.size2 { font-size: 0.241158em; }
+.katex .sizing.reset-size11.size3, .katex .fontsize-ensurer.reset-size11.size3 { font-size: 0.28135em; }
+.katex .sizing.reset-size11.size4, .katex .fontsize-ensurer.reset-size11.size4 { font-size: 0.321543em; }
+.katex .sizing.reset-size11.size5, .katex .fontsize-ensurer.reset-size11.size5 { font-size: 0.361736em; }
+.katex .sizing.reset-size11.size6, .katex .fontsize-ensurer.reset-size11.size6 { font-size: 0.401929em; }
+.katex .sizing.reset-size11.size7, .katex .fontsize-ensurer.reset-size11.size7 { font-size: 0.482315em; }
+.katex .sizing.reset-size11.size8, .katex .fontsize-ensurer.reset-size11.size8 { font-size: 0.578778em; }
+.katex .sizing.reset-size11.size9, .katex .fontsize-ensurer.reset-size11.size9 { font-size: 0.694534em; }
+.katex .sizing.reset-size11.size10, .katex .fontsize-ensurer.reset-size11.size10 { font-size: 0.833601em; }
+.katex .sizing.reset-size11.size11, .katex .fontsize-ensurer.reset-size11.size11 { font-size: 1em; }
+.katex .delimsizing.size1 { }
+.katex .delimsizing.size2 { }
+.katex .delimsizing.size3 { }
+.katex .delimsizing.size4 { }
+.katex .delimsizing.mult .delim-size1 > span { }
+.katex .delimsizing.mult .delim-size4 > span { }
+.katex .nulldelimiter { display: inline-block; width: 0.12em; }
+.katex .delimcenter { position: relative; }
+.katex .op-symbol { position: relative; }
+.katex .op-symbol.small-op { }
+.katex .op-symbol.large-op { }
+.katex .op-limits > .vlist-t { text-align: center; }
+.katex .accent > .vlist-t { text-align: center; }
+.katex .accent .accent-body > span { width: 0px; }
+.katex .accent .accent-body.accent-vec > span { position: relative; left: 0.326em; }
+.katex .accent .accent-body.accent-hungarian > span { position: relative; left: 0.25em; }
+.katex .mtable .vertical-separator { display: inline-block; margin: 0px -0.025em; width: 0.05em; }
+@media screen { 
+  .katex .mtable .vertical-separator { min-width: 1px; }
+}
+@media screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi) { 
+  .katex .mtable .vertical-separator { min-width: 0.5px; }
+}
+.katex .mtable .arraycolsep { display: inline-block; }
+.katex .mtable .col-align-c > .vlist-t { text-align: center; }
+.katex .mtable .col-align-l > .vlist-t { text-align: left; }
+.katex .mtable .col-align-r > .vlist-t { text-align: right; }
+.katex .svg-align { text-align: left; }
+.katex svg { display: block; position: absolute; width: 100%; }
+.katex svg path { fill: currentcolor; }
+.katex svg line { stroke: currentcolor; }
+.katex .stretchy { width: 100%; display: block; }
+.katex .stretchy::before, .katex .stretchy::after { content: ""; }
+.katex .hide-tail { width: 100%; position: relative; overflow: hidden; }
+.katex .halfarrow-left { position: absolute; left: 0px; width: 50.1%; overflow: hidden; }
+.katex .halfarrow-right { position: absolute; right: 0px; width: 50%; overflow: hidden; }
+.katex .brace-left { position: absolute; left: 0px; width: 25.1%; overflow: hidden; }
+.katex .brace-center { position: absolute; left: 25%; width: 50%; overflow: hidden; }
+.katex .brace-right { position: absolute; right: 0px; width: 25.1%; overflow: hidden; }
+.katex .x-arrow-pad { padding: 0px 0.5em; }
+.katex .x-arrow, .katex .mover, .katex .munder { text-align: center; }
+.katex .boxpad { padding: 0px 0.3em; }
+.katex .fbox { box-sizing: border-box; border: 0.04em solid black; }
+.katex .fcolorbox { box-sizing: border-box; border: 0.04em solid; }
+.katex .cancel-pad { padding: 0px 0.2em; }
+.katex .mord + .cancel-lap, .katex .mbin + .cancel-lap { margin-left: -0.2em; }
+.katex .cancel-lap + .mord, .katex .cancel-lap + .mbin, .katex .cancel-lap + .msupsub { margin-left: -0.2em; }
+.katex .sout { border-bottom-style: solid; border-bottom-width: 0.08em; } 
+.output_wrapper .hljs{display: block; overflow-x: auto; padding: 0.5em; background: rgb(51, 51, 51); color: white;}
+
+.output_wrapper .hljs-name,.output_wrapper  .hljs-strong{font-weight: bold;}
+
+.output_wrapper .hljs-code,.output_wrapper  .hljs-emphasis{font-style: italic;}
+
+.output_wrapper .hljs-tag{color: rgb(98, 200, 243);}
+
+.output_wrapper .hljs-variable,.output_wrapper  .hljs-template-variable,.output_wrapper  .hljs-selector-id,.output_wrapper  .hljs-selector-class{color: rgb(173, 229, 252);}
+
+.output_wrapper .hljs-string,.output_wrapper  .hljs-bullet{color: rgb(162, 252, 162);}
+
+.output_wrapper .hljs-type,.output_wrapper  .hljs-title,.output_wrapper  .hljs-section,.output_wrapper  .hljs-attribute,.output_wrapper  .hljs-quote,.output_wrapper  .hljs-built_in,.output_wrapper  .hljs-builtin-name{color: rgb(255, 255, 170);}
+
+.output_wrapper .hljs-number,.output_wrapper  .hljs-symbol,.output_wrapper  .hljs-bullet{color: rgb(211, 99, 99);}
+
+.output_wrapper .hljs-keyword,.output_wrapper  .hljs-selector-tag,.output_wrapper  .hljs-literal{color: rgb(252, 194, 140);}
+
+.output_wrapper .hljs-comment,.output_wrapper  .hljs-deletion,.output_wrapper  .hljs-code{color: rgb(136, 136, 136);}
+
+.output_wrapper .hljs-regexp,.output_wrapper  .hljs-link{color: rgb(198, 180, 240);}
+
+.output_wrapper .hljs-meta{color: rgb(252, 155, 155);}
+
+.output_wrapper .hljs-deletion{background-color: rgb(252, 155, 155); color: rgb(51, 51, 51);}
+
+.output_wrapper .hljs-addition{background-color: rgb(162, 252, 162); color: rgb(51, 51, 51);}
+
+.output_wrapper .hljs a{color: inherit;}
+
+.output_wrapper .hljs a:focus,.output_wrapper  .hljs a:hover{color: inherit; text-decoration: underline;}
+ 
+.output_wrapper pre code {line-height: 18px; font-size: 14px; font-weight: normal; word-spacing: 0px; letter-spacing: 0px;} 
+.output_wrapper{font-size: 15px; color: rgb(62, 62, 62); line-height: 1.8; word-spacing: 2px; letter-spacing: 2px; font-family: "Helvetica Neue", Helvetica, "Hiragino Sans GB", "Microsoft YaHei", Arial, sans-serif; background-image: linear-gradient(90deg, rgba(50, 0, 0, 0.0470588) 3%, rgba(0, 0, 0, 0) 3%), linear-gradient(360deg, rgba(50, 0, 0, 0.0470588) 3%, rgba(0, 0, 0, 0) 3%); background-size: 20px 20px; background-position: center center;}
+
+.output_wrapper *{font-size: inherit; color: inherit; line-height: inherit; margin: 0px; padding: 0px;}
+
+.output_wrapper p{margin: 1.7em 0px;}
+
+.output_wrapper h1,.output_wrapper  h2,.output_wrapper  h3,.output_wrapper  h4,.output_wrapper  h5,.output_wrapper  h6{margin: 1.6em 0px; font-weight: bold;}
+
+.output_wrapper h1{font-size: 1.6em;}
+
+.output_wrapper h2{font-size: 1.4em;}
+
+.output_wrapper h3{font-size: 1.3em;}
+
+.output_wrapper h4{font-size: 1.2em;}
+
+.output_wrapper h5{font-size: 1em;}
+
+.output_wrapper h6{font-size: 1em;}
+
+.output_wrapper h1{border-top: 2px solid rgb(3, 155, 229);}
+
+.output_wrapper h1 span{display: inline-block; font-weight: normal; background: rgb(3, 155, 229); color: rgb(255, 255, 255); padding: 3px 10px 0px; border-bottom-right-radius: 3px; border-bottom-left-radius: 4px; border-bottom: 2px solid rgb(0, 96, 100); border-right: 3px solid rgb(0, 96, 100); margin-left: 5px; margin-right: 2px;}
+
+.output_wrapper h2{border-bottom: 2px solid rgb(0, 172, 193);}
+
+.output_wrapper h2 span{display: inline-block; font-weight: normal; background: rgb(0, 172, 193); color: rgb(255, 255, 255); padding: 3px 10px 0px; border-top-right-radius: 3px; border-top-left-radius: 4px; margin-left: 0px; margin-right: 2px;}
+
+.output_wrapper h3{border-bottom: 2px solid rgb(239, 112, 96); font-size: 1.3em;}
+
+.output_wrapper h3 span{display: inline-block; font-weight: normal; background: rgb(239, 112, 96); color: rgb(255, 255, 255); padding: 3px 10px 1px; border-top-right-radius: 3px; border-top-left-radius: 3px; margin-right: 3px;}
+
+.output_wrapper h3::after{display: inline-block; content: " "; vertical-align: bottom; border-bottom: 36px solid rgb(239, 235, 233); border-right: 20px solid transparent;}
+
+.output_wrapper ul,.output_wrapper  ol{padding-left: 32px;}
+
+.output_wrapper ul{list-style-type: disc;}
+
+.output_wrapper ol{list-style-type: decimal;}
+
+.output_wrapper li *{}
+
+.output_wrapper li{margin-bottom: 0.5em;}
+
+.output_wrapper .code_size_default{line-height: 18px; font-size: 14px; font-weight: normal; word-spacing: 0px; letter-spacing: 0px;}
+
+.output_wrapper .code_size_tight{line-height: 15px; font-size: 11px; font-weight: normal; word-spacing: -3px; letter-spacing: 0px;}
+
+.output_wrapper pre code{font-family: Consolas, Inconsolata, Courier, monospace; border-radius: 0px;}
+
+.output_wrapper blockquote{display: block; padding: 15px 15px 15px 1rem; font-size: 0.9em; margin: 1em 0px; color: rgb(239, 112, 96); font-weight: bold; border-left: 5px solid rgb(239, 112, 96); background: rgb(239, 235, 233); overflow: auto; word-wrap: normal; word-break: normal;}
+
+.output_wrapper blockquote p{margin: 0px;}
+
+.output_wrapper a{text-decoration: none; color: rgb(30, 107, 184); word-wrap: break-word;}
+
+.output_wrapper strong{font-weight: bold; color: rgb(233, 105, 0);}
+
+.output_wrapper em{color: rgb(98, 0, 234);}
+
+.output_wrapper del{font-style: italic; text-decoration: none; color: rgb(41, 98, 255);}
+
+.output_wrapper strong em{font-weight: bold; color: rgb(197, 17, 98);}
+
+.output_wrapper hr{height: 8px; margin: 2.5rem 20px; border-radius: 50%; border-top: 3px solid rgb(165, 165, 165);}
+
+.output_wrapper code{word-wrap: break-word; padding: 2px 4px; border-radius: 4px; margin: 0px 2px; color: rgb(248, 35, 117); background: rgb(248, 248, 248);}
+
+.output_wrapper img{display: block; margin: 0px auto; max-width: 100%;}
+
+.output_wrapper figcaption{margin-top: 10px; text-align: center; color: rgb(153, 153, 153); font-size: 0.7em;}
+
+.output_wrapper table{display: table; width: 100%; text-align: left;}
+
+.output_wrapper tbody{border: 0px;}
+
+.output_wrapper table tr{border-width: 1px 0px 0px; border-right-style: initial; border-bottom-style: initial; border-left-style: initial; border-right-color: initial; border-bottom-color: initial; border-left-color: initial; border-image: initial; border-top-style: solid; border-top-color: rgb(204, 204, 204); background-color: white;}
+
+.output_wrapper table tr:nth-child(2n){background-color: rgb(248, 248, 248);}
+
+.output_wrapper table tr th,.output_wrapper  table tr td{font-size: 1em; border: 1px solid rgb(204, 204, 204); padding: 0.5em 1em; text-align: left;}
+
+.output_wrapper table tr th{font-weight: bold; background-color: rgb(240, 240, 240);}
+
+.output_wrapper .katex-display{font-size: 1.5em;}
+
+.output_wrapper a[href^="#"] sup{vertical-align: super; margin: 0px 2px; padding: 1px 3px; color: rgb(255, 255, 255); background: rgb(102, 102, 102); font-size: 0.7em;}
+
+.output_wrapper .task-list-list{list-style-type: none;}
+
+.output_wrapper .task-list-list.checked{color: rgb(62, 62, 62);}
+
+.output_wrapper .task-list-list.uncheck{color: rgb(191, 193, 191);}
+
+.output_wrapper .task-list-list .icon_uncheck,.output_wrapper  .task-list-list .icon_check{display: inline-block; vertical-align: middle; margin-right: 10px;}
+
+.output_wrapper .task-list-list .icon_check::before{content: "√"; border: 2px solid rgb(62, 62, 62); color: red;}
+
+.output_wrapper .task-list-list .icon_uncheck::before{content: "x"; border: 2px solid rgb(191, 193, 191); color: rgb(191, 193, 191);}
+
+.output_wrapper .task-list-list .icon_check::before,.output_wrapper  .task-list-list .icon_uncheck::before{padding: 2px 8px 2px 5px; border-radius: 5px;}
+
+.output_wrapper .toc{margin-left: 25px;}
+
+.output_wrapper .toc_item{display: block;}
+
+.output_wrapper .toc_left{margin-left: 25px;}
+ 
+</style>  
+  <style type="text/css" id="export_setting_css">body { width: 100%; margin: 0px; padding: 0px; background: rgb(81, 154, 178); }
+#export_content { margin: 40px 20%; padding: 20px; border: 1px solid rgb(149, 155, 111); background: rgb(255, 255, 255); }</style>  
+
+</head><body><div id="export_content"><div class="output_wrapper" id="output_wrapper_id"><h2 id="handroid"><span>Android开发遇到的坑汇总</span></h2>
+<blockquote>
+  <p>Toolbar去除标题与返回键间的间距</p>
+</blockquote>
+<p>给toolbar加上以下属性：</p>
+<pre><code class="hljs cpp">app:navigationIcon=<span class="hljs-string">"@drawable/icon_back"</span> <span class="hljs-comment">//这是设置返回键图标，这是必不可少的。 </span><br>app:contentInsetStartWithNavigation=<span class="hljs-string">"0dp"</span><br></code></pre>
+<p>为了保险起见，建议加上这两个属性：</p>
+<pre><code class="hljs apache"><span class="hljs-attribute">app</span>:contentInsetLeft=<span class="hljs-string">"0dp"</span><br><span class="hljs-attribute">app</span>:contentInsetStart=<span class="hljs-string">"0dp"</span><br></code></pre>
+<p>完整的示范如下：</p>
+<pre><code class="hljs perl">&lt;android.support.v7.widget.Toolbar xmlns:app=<span class="hljs-string">"http://schemas.android.com/apk/res-auto"</span> <br>    android:id=<span class="hljs-string">"@+id/title_tool_bar"</span> <br>    android:layout_width=<span class="hljs-string">"match_parent"</span> <br>    android:layout_height=<span class="hljs-string">"?attr/actionBarSize"</span> <br>    android:background=<span class="hljs-string">"@color/colorTheme"</span> <br>    app:contentInsetLeft=<span class="hljs-string">"0dp"</span> <br>    app:contentInsetStart=<span class="hljs-string">"0dp"</span> <br>    app:contentInsetStartWithNavigation=<span class="hljs-string">"0dp"</span> <br>    app:layout_scrollFlags=<span class="hljs-string">"enterAlways|scroll"</span> <br>    app:navigationIcon=<span class="hljs-string">"@drawable/icon_back"</span> <br>    app:popupTheme=<span class="hljs-string">"@style/ThemeOverlay.AppCompat.Light"</span> <br>    app:theme=<span class="hljs-string">"@style/ToolbarStyle"</span> <br>    app:title=<span class="hljs-string">"标题"</span> <br>    app:titleTextColor=<span class="hljs-string">"@color/colorWhite"</span>&gt;<br></code></pre></div></div></body>
+</html>
