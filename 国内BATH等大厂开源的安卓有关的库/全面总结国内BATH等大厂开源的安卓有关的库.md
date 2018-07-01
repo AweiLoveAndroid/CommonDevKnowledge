@@ -50,9 +50,13 @@ UltraViewPager 是阿里开源的一个封装多种特性的 ViewPager ，主要
 　　AndFix 支持 Android 2.3 - 6.0，ARM 和 x86 架构，dalvik 运行时和 art 运行时。AndFix 的分支是 .apatch 文件。
 
 　**（一）AndFix 方法体取代实现规则：**
+ 
 ![](http://upload-images.jianshu.io/upload_images/6098829-74264ec1266edc8c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
 　**（二）Bug 修复过程：**
+ 
 ![](http://upload-images.jianshu.io/upload_images/6098829-3f3de970008eba66.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
 　**（三）使用**
     
 　　1. 生成 .apatch 文件：
@@ -240,6 +244,7 @@ https://github.com/alibaba/LuaViewPlayground  这个库是对LuaViewSDK的一个
 #### （四）编译、解析、埋点工具有关
 
 >**1. freeline(我本人目前用这个用得最多，比自带的编译速度快多了)**
+
  　　它是一个Android Studio的插件，可以在Android Studio的插件库查找到，下载安装直接使用。这里列举的是阿里巴巴在github的官网源码。
  　　Freeline 是 Android 平台上的秒级编译方案，Instant Run 的替代品，也可以从 [Freeline 官方主页](https://www.freelinebuild.com/) 来获取更多的信息。
  　　Freeline 由 [蚂蚁聚宝](https://www.antfortune.com/) Android 团队开发，它可以充分利用缓存文件，在几秒钟内迅速地对代码的改动进行编译并部署到设备上，有效地减少了日常开发中的大量重新编译与安装的耗时。
@@ -260,12 +265,14 @@ https://github.com/alibaba/LuaViewPlayground  这个库是对LuaViewSDK的一个
 [github地址：freeline](https://github.com/alibaba/freeline)
 
 >**2. fastjson**
+
  　　Fastjson是一个Java语言编写的高性能功能完善的JSON库。它采用一种“假定有序快速匹配”的算法，把JSON Parse的性能提升到极致，是目前Java语言中最快的JSON库。Fastjson接口简单易用，已经被广泛使用在缓存序列化、协议交互、Web输出、Android客户端等多种应用场景。
 
 [github地址： fastjson](https://github.com/alibaba/fastjson)
 
 
 >**3.android_viewtracker**
+
  　　ViewTracker是用于自动化的采集用户UI交互过程中的点击和曝光事件，基于view事件代理及过滤的数据采集库。
 
 功能：
@@ -318,32 +325,38 @@ GCanvas 支持 Android 4.0+（API 14）和 iOS 8.0+ 。支持 Weex 和 ReactNati
 ## 二、腾讯
 
 >**1. 随身调测平台 GT**
+
  　　GT（随身调）是APP的随身调测平台，它是直接运行在手机上的“集成调测环境”(IDTE, Integrated Debug Environment)。利用GT，仅凭一部手机，无需连接电脑，您即可对APP进行快速的性能测试(CPU、内存、流量、电量、帧率/流畅度等等)、 开发日志的查看、Crash日志查看、网络数据包的抓取、APP内部参数的调试、真机代码耗时统计等。如果您觉得GT提供的功能还不够满足您的需要，您还 可以利用GT提供的基础API自行开发有特殊功能的GT插件，帮助您解决更加复杂的APP调试问题。
 
 [github地址：GT](https://github.com/TencentOpen/GT)
 
 >**2. Frozen UI 移动端UI框架**
+
  　　Frozen UI是一个开源的简单易用，轻量快捷的移动端UI框架。基于手Q样式规范，选取最常用的组件，做成手Q公用离线包减少请求，升级方式友好，文档完善，目前全面应用在腾讯手Q增值业务中。
 
 [github地址：Frozen UI](https://github.com/frozenui/frozenui)
 
 >**3. AlloyTouch**
+
  　　丝般顺滑的触摸运动方案。这是一个给Web app使用的一个库。这里面包含有一个 **[级联选择器](https://github.com/AlloyTeam/AlloyTouch/tree/master/select) 。**
 
 [github地址：AlloyTouch](https://github.com/AlloyTeam/AlloyTouch)
 查看文档请点击： https://github.com/AlloyTeam/AlloyTouch/wiki
 
 >**4. AlloyFinger**
+
  　　轻量级的多点触摸网络手势库，用于web app的一个库。
 
 [github地址：AlloyFinger](https://github.com/AlloyTeam/AlloyFinger)
 
 >**5. AlloyCrop**
+
  　　最好且最小的移动裁剪组件，用于web app的一个库。
 
 [github地址：AlloyFinger](https://github.com/AlloyTeam/AlloyCrop)
 
 >**6. 组件化框架 Omi 和 Omix**
+
   　　Omi（读音 / [ˈomɪ] /, 汉字类似于 欧米） 是一款用于创建Web用户界面的组件化框架，开放并且现代，故得名：Omi。Omi框架提供了渐进增强式的Web开发解决方案，内置完善的支持无限声明式嵌套的组件系统。
 
 概括起来包含下面优点和特性:
@@ -367,6 +380,7 @@ GCanvas 支持 Android 4.0+（API 14）和 iOS 8.0+ 。支持 Weex 和 ReactNati
 [github地址：Omi](https://github.com/AlloyTeam/omi) 
 
 >**7. 组件化框架Omix**
+
   　　Omix（读音 / [ˈomɪkɜ:s] /, 汉字类似于 欧米可思） 是一款使用 JSX 创建Web用户界面的组件化框架，故得名：Omix。它并不是用来替代 [Omi框架](https://github.com/AlloyTeam/omi)，而是另外一种选择。
 
 概括起来包含下面优点和特性:
@@ -386,6 +400,7 @@ GCanvas 支持 Android 4.0+（API 14）和 iOS 8.0+ 。支持 Weex 和 ReactNati
  [github地址：Omix](https://github.com/AlloyTeam/omix)
 
 >**8.JX**
+
   　　JX 是 Javascript eXtension tools 的缩写，即 Javascript 扩展工具套件的意思。一个类似 Google Closure Library 的 Web 前端开发框架。JX 框架同时适用于 Web Page 和 Web App 项目的开发，特别适合构建和组织大规模、工业级的Web App，腾讯 WebQQ -、腾讯 Q+等产品都是采用JX框架开发，兼容目前所有主流浏览器。
 
 **特性：** 
@@ -401,15 +416,18 @@ GCanvas 支持 Android 4.0+（API 14）和 iOS 8.0+ 。支持 Weex 和 ReactNati
 [github地址： JX](https://github.com/AlloyTeam/JX)
 
 >**9. [WeTest-Assistant](https://github.com/Tencent/WeTest-Assistant)**
+
   　　这是基于手机端的辅助测试工具，目前包括性能测试和远程调试两大功能，能够为手游等项目发现CPU、内存、FPS等性能问题，并提供云端真机用于问题在线调试，共计为公司内外部项目服务5.4万次；手游客户端性能测试常用性能维度，CPU，内存，FPS，流量一次性全部收集，图表化展示，数据可按场景化分类，并且支持离线和在线两种模式， 地铁上都可以做测试，Web上看报告。远程调试配合自研的云真机技术，支持多点触控、类手柄遥控，真实还原手游测试场景，极速流畅、极低延迟， 本地只需要一台手机即可操控云端任何一台手机。支持ROOT和非ROOT安卓手机，支持越狱iOS系统。
 
 >**10.Tinker**
+
   　　Tinker是是微信官方的Android热补丁解决方案，它支持动态下发代码、So库以及资源，让应用能够在不需要重新安装的情况下实现更新。当然，你也可以使用Tinker来更新你的插件。
 
 [github地址：Tinker](https://github.com/Tencent/tinker)
 [官方文档](https://github.com/Tencent/tinker/wiki)
 
 >**11.ncnn**
+
   　　ncnn 是一个为手机端极致优化的高性能神经网络前向计算框架。ncnn 从设计之初深刻考虑手机端的部署和使用。无第三方依赖，跨平台，手机端 cpu 的速度快于目前所有已知的开源框架。基于 ncnn，开发者能够将深度学习算法轻松移植到手机端高效执行，开发出人工智能 APP，将 AI 带到你的指尖。ncnn 目前已在腾讯多款应用中使用，如 QQ，Qzone，微信，天天P图等。
 
 **功能：**
@@ -428,12 +446,14 @@ GCanvas 支持 Android 4.0+（API 14）和 iOS 8.0+ 。支持 Weex 和 ReactNati
 [github地址：ncnn](https://github.com/Tencent/ncnn)
 
 >**12.RapidView**
+
   　　RapidView是一套用于开发Android客户端界面、逻辑以及功能的开发组件。布局文件(XML)及逻辑文件(Lua)可以运行时执行，主要用以解决Android客户端界面、逻辑快速更新以及快速开发的诉求。RapidView的XML语法规则与Android原生XML类似，而写逻辑的Lua部分除语言语法规则外，可以直接使用我们提供的Java API以及Android原生API，因此熟悉Android客户端开发的开发者上手成本会非常小。
 
 [github地址：RapidView](https://github.com/Tencent/RapidView)
 [官方文档](https://github.com/Tencent/RapidView/blob/master/document.md)
 
 >**13. QMUI Android（QMUI是腾讯的一个团队，web，ios，android三平台都有对应的工具，这里列举的是Android）**
+
   　　QMUI Android 的设计目的是用于辅助快速搭建一个具备基本设计还原效果的 Android 项目，同时利用自身提供的丰富控件及兼容处理，让开发者能专注于业务需求而无需耗费精力在基础代码的设计上。不管是新项目的创建，或是已有项目的维护，均可使开发效率和项目质量得到大幅度提升。
 
 QMUI Android 官网：http://qmuiteam.com/android/page/index.html
