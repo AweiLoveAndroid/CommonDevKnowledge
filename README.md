@@ -17,7 +17,7 @@
 :fire: :two: **[BAT大公司面试题集锦](https://github.com/AweiLoveAndroid/CommonDevKnowledge/blob/master/interview/summary.md)**
 这一部分同步发布在我的简书博客，文章地址：[https://www.jianshu.com/p/c70989bd5f29](https://www.jianshu.com/p/c70989bd5f29)
 
-:fire: :three: **[全面总结国内BATH等大厂开源的安卓有关的库](https://github.com/AweiLoveAndroid/CommonDevKnowledge/blob/master/)** 这一部分同步发布在我的简书博客，文章地址：[https://www.jianshu.com/p/2a6c806ba2fc](https://www.jianshu.com/p/2a6c806ba2fc)
+:fire: :three: **[全面总结国内BATH等大厂开源的安卓有关的库](https://github.com/AweiLoveAndroid/CommonDevKnowledge/blob/master/%E5%9B%BD%E5%86%85BATH%E7%AD%89%E5%A4%A7%E5%8E%82%E5%BC%80%E6%BA%90%E7%9A%84%E5%AE%89%E5%8D%93%E6%9C%89%E5%85%B3%E7%9A%84%E5%BA%93/%E5%85%A8%E9%9D%A2%E6%80%BB%E7%BB%93%E5%9B%BD%E5%86%85BATH%E7%AD%89%E5%A4%A7%E5%8E%82%E5%BC%80%E6%BA%90%E7%9A%84%E5%AE%89%E5%8D%93%E6%9C%89%E5%85%B3%E7%9A%84%E5%BA%93.md)** 这一部分同步发布在我的简书博客，文章地址：[https://www.jianshu.com/p/2a6c806ba2fc](https://www.jianshu.com/p/2a6c806ba2fc)
 
 :fire: :four:  **[屏幕适配](https://www.jianshu.com/c/b5d1ce82ee2d)**
 
@@ -31,7 +31,7 @@
 
 :pencil: :nine:  **利用原生api实现分享等功能（待完善）**
 
-:keycap_ten: **二维码处理（待完善）**
+:pencil: :keycap_ten: **二维码处理（待完善）**
 
 ----
 
