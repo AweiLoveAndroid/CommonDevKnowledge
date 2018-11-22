@@ -43,16 +43,32 @@
 
 ----
 
-# 关于我：
+# 联系我
 
-* **简书博客：[https://www.jianshu.com/u/f408bdadacce](https://www.jianshu.com/u/f408bdadacce)**
-* **github： [https://github.com/AweiLoveAndroid/CommonDevKnowledge](https://github.com/AweiLoveAndroid/CommonDevKnowledge)**
+###  ●  微信：
 
-----
+> 欢迎关注我的微信：`wei_xing_tian_xia`  
 
-# 交流
+###  ●  微信群：
 
-* **QQ群： 280891494**
+> 由于大家学习热情太高，**微信群目前不能扫码加入了，麻烦大家想进微信群的朋友们，加我微信拉你进群。**
+
+###  ●  微信公众号：
+
+> 我的微信公众号也开通了，欢迎大家关注：`Flutter那些事`，扫码就可以关注了，专注于研究Flutter的公众号，最新最全面的系统的Flutter干货总结都在这个公众号，欢迎关注。
+
+![我的微信公众号](https://github.com/AweiLoveAndroid/Flutter-learning/blob/master/pics/%E5%85%AC%E4%BC%97%E5%8F%B7%E4%BA%8C%E7%BB%B4%E7%A0%81.jpg?raw=true)
+
+
+###  ●  QQ群：
+
+> 2千人QQ群，**Flutter学习开发交流群，QQ群号：202921297**， 欢迎大家加入。
+
+### ●  个人博客：
+
+[简书博客 AWeiLoveAndroid](https://www.jianshu.com/u/f408bdadacce)
+
+[掘金博客 AWeiLoveAndroid](https://juejin.im/user/5a07c6c0f265da430a501017)
 
 ----
 
