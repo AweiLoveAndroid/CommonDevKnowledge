@@ -11,27 +11,37 @@
 
 ## 目录结构
 
+### 1、面试&职场
+
+:fire: :one: **[BAT大公司面试题集锦](https://github.com/AweiLoveAndroid/CommonDevKnowledge/blob/master/interview/summary.md)**
+这一部分同步发布在我的简书博客，文章地址：[https://www.jianshu.com/p/c70989bd5f29](https://www.jianshu.com/p/c70989bd5f29)
+
+### 2、开发文档&开发规范
+
 :fire: :one: **[README文档的规范写法](https://github.com/AweiLoveAndroid/CommonDevKnowledge/blob/master/github_README/README%E6%96%87%E6%A1%A3%E7%9A%84%E8%A7%84%E8%8C%83%E5%86%99%E6%B3%95.md)** 
 这一部分同步发布在我的简书博客，文章地址：[https://www.jianshu.com/p/813b70d5b0de](https://www.jianshu.com/p/813b70d5b0de)
 
-:fire: :two: **[BAT大公司面试题集锦](https://github.com/AweiLoveAndroid/CommonDevKnowledge/blob/master/interview/summary.md)**
-这一部分同步发布在我的简书博客，文章地址：[https://www.jianshu.com/p/c70989bd5f29](https://www.jianshu.com/p/c70989bd5f29)
+### 3、Android技能点整理
 
-:fire: :three: **[全面总结国内BATH等大厂开源的安卓有关的库](https://github.com/AweiLoveAndroid/CommonDevKnowledge/blob/master/%E5%9B%BD%E5%86%85BATH%E7%AD%89%E5%A4%A7%E5%8E%82%E5%BC%80%E6%BA%90%E7%9A%84%E5%AE%89%E5%8D%93%E6%9C%89%E5%85%B3%E7%9A%84%E5%BA%93/%E5%85%A8%E9%9D%A2%E6%80%BB%E7%BB%93%E5%9B%BD%E5%86%85BATH%E7%AD%89%E5%A4%A7%E5%8E%82%E5%BC%80%E6%BA%90%E7%9A%84%E5%AE%89%E5%8D%93%E6%9C%89%E5%85%B3%E7%9A%84%E5%BA%93.md)** 这一部分同步发布在我的简书博客，文章地址：[https://www.jianshu.com/p/2a6c806ba2fc](https://www.jianshu.com/p/2a6c806ba2fc)
+:point_right: :one:  **[Android开发遇到的坑汇总](https://github.com/AweiLoveAndroid/CommonDevKnowledge/blob/master/Android%E5%BC%80%E5%8F%91%E9%81%87%E5%88%B0%E7%9A%84%E5%9D%91%E6%B1%87%E6%80%BB/Android%E5%BC%80%E5%8F%91%E9%81%87%E5%88%B0%E7%9A%84%E5%9D%91.md)**
 
-:fire: :four:  **[屏幕适配](https://www.jianshu.com/c/b5d1ce82ee2d)**
+:fire: :one:  **[屏幕适配](https://www.jianshu.com/c/b5d1ce82ee2d)**
 
-:point_right: :five:  **[Android开发遇到的坑汇总](https://github.com/AweiLoveAndroid/CommonDevKnowledge/blob/master/Android%E5%BC%80%E5%8F%91%E9%81%87%E5%88%B0%E7%9A%84%E5%9D%91%E6%B1%87%E6%80%BB/Android%E5%BC%80%E5%8F%91%E9%81%87%E5%88%B0%E7%9A%84%E5%9D%91.md)**
+:fire: :one:  **[常用工具类（超级全面，值得收藏）]()**
 
-:point_right: :six:  **[Android中的冷门知识点汇总](https://github.com/AweiLoveAndroid/CommonDevKnowledge/blob/master/Android%E4%B8%AD%E7%9A%84%E5%86%B7%E9%97%A8%E7%9F%A5%E8%AF%86%E7%82%B9%E6%B1%87%E6%80%BB/Android%E4%B8%AD%E7%9A%84%E5%86%B7%E9%97%A8%E7%9F%A5%E8%AF%86%E6%B1%87%E6%80%BB.md)**
+:point_right: :one:  **[Android中的冷门知识点汇总](https://github.com/AweiLoveAndroid/CommonDevKnowledge/blob/master/Android%E4%B8%AD%E7%9A%84%E5%86%B7%E9%97%A8%E7%9F%A5%E8%AF%86%E7%82%B9%E6%B1%87%E6%80%BB/Android%E4%B8%AD%E7%9A%84%E5%86%B7%E9%97%A8%E7%9F%A5%E8%AF%86%E6%B1%87%E6%80%BB.md)**
 
-:pencil: :seven: **[双击back退出app](https://github.com/AweiLoveAndroid/CommonDevKnowledge/blob/master/%E5%8F%8C%E5%87%BBback%E9%80%80%E5%87%BAapp/%E5%8F%8C%E5%87%BBback%E9%80%80%E5%87%BAapp.md)**
+:pencil: :one: **[双击back退出app](https://github.com/AweiLoveAndroid/CommonDevKnowledge/blob/master/%E5%8F%8C%E5%87%BBback%E9%80%80%E5%87%BAapp/%E5%8F%8C%E5%87%BBback%E9%80%80%E5%87%BAapp.md)**
 
-:pencil: :eight:  **应用角标的实现（待完善）**
+:pencil: :one:  **应用角标的实现（待完善）**
 
-:pencil: :nine:  **利用原生api实现分享等功能（待完善）**
+:pencil: :one:  **利用原生api实现分享等功能（待完善）**
 
-:pencil: :keycap_ten: **二维码处理（待完善）**
+:pencil: :one: **二维码处理（待完善）**
+
+### 4、开源库整理
+
+:fire: :one: **[全面总结国内BATH等大厂开源的安卓有关的库](https://github.com/AweiLoveAndroid/CommonDevKnowledge/blob/master/%E5%9B%BD%E5%86%85BATH%E7%AD%89%E5%A4%A7%E5%8E%82%E5%BC%80%E6%BA%90%E7%9A%84%E5%AE%89%E5%8D%93%E6%9C%89%E5%85%B3%E7%9A%84%E5%BA%93/%E5%85%A8%E9%9D%A2%E6%80%BB%E7%BB%93%E5%9B%BD%E5%86%85BATH%E7%AD%89%E5%A4%A7%E5%8E%82%E5%BC%80%E6%BA%90%E7%9A%84%E5%AE%89%E5%8D%93%E6%9C%89%E5%85%B3%E7%9A%84%E5%BA%93.md)** 这一部分同步发布在我的简书博客，文章地址：[https://www.jianshu.com/p/2a6c806ba2fc](https://www.jianshu.com/p/2a6c806ba2fc)
 
 ----
 
