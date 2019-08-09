@@ -1,11 +1,29 @@
 # CommonDevKnowledge
 
-常用的Android开发的一些技能点汇集。
 
+<p align="center">
+  <a href="https://github.com/AweiLoveAndroid/CommonDevKnowledge" target="_blank">
+	  <img src="https://raw.githubusercontent.com/AweiLoveAndroid/CommonDevKnowledge/master/pic/logo.png"/>
+  </a>
+</p>
+
+<p align="center">
+<a href="https://developer.android.google.cn/index.html"><img src="https://img.shields.io/badge/platform-Android-yellowgreen.svg"></a>
+<a href="https://github.com/AweiLoveAndroid/CommonDevKnowledge/blob/master/LICENSE"><img src="https://img.shields.io/github/license/AweiLoveAndroid/CommonDevKnowledge.svg"></a>
+<a href="https://github.com/AweiLoveAndroid/CommonDevKnowledge/network/members"><img src="https://img.shields.io/github/forks/AweiLoveAndroid/CommonDevKnowledge.svg"></a>
+<a href="https://github.com/AweiLoveAndroid/CommonDevKnowledge/stargazers"><img src="https://img.shields.io/github/stars/AweiLoveAndroid/CommonDevKnowledge.svg"></a>
+<a href="https://github.com/AweiLoveAndroid/CommonDevKnowledge/issues"><img src="https://img.shields.io/badge/issues-%E6%84%8F%E8%A7%81%E5%BB%BA%E8%AE%AE-important.svg"></a>
+<a href="//shang.qq.com/wpa/qunwpa?idkey=c1ffcc74ac64e98b1546b94537c581922548a7e63f78a86fcb59cef47988f453">
+<img src="https://img.shields.io/badge/QQ%E7%BE%A4-280891494-informational.svg" target="_blank" alt="酷玩Android你最牛" title="280891494"></a>
+</p>
 ----
 
 ## 介绍
-这个库主要是一些常用的Android开发的一些技能点汇集，有填坑总结，有面试总结，有冷门知识点总结等，会不定期更新，欢迎大家投稿和提意见。
+这个库主要是一些常用的Android开发的一些技能点汇集，有填坑总结，有面试总结，有冷门知识点总结等，总之Android开发有关的知识点都会涵盖到。
+
+Android只是太多太杂乱，很多人都不知道从何学起。也一些东西我们开发中经常会遇到，于是我就把常用知识点汇集在一起，方便大家平时开发。
+
+我会不定期更新，欢迎大家投稿和提意见，提issues请点击：<a href="https://github.com/AweiLoveAndroid/CommonDevKnowledge/issues"><img src="https://img.shields.io/badge/issues-%E6%84%8F%E8%A7%81%E5%BB%BA%E8%AE%AE-important.svg"></a>。如果你遇到一些好用的好玩的开发知识点，欢迎pull request，请点击：<a href="https://github.com/AweiLoveAndroid/CommonDevKnowledge/pulls"><img src="https://img.shields.io/badge/pull%20request-%E5%A5%BD%E4%B8%9C%E4%B8%9C%E5%B8%A6%E6%88%91%E4%B8%80%E4%B8%AA-yellow.svg"></a>。
 
 ----
 
