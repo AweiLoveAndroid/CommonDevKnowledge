@@ -16,6 +16,7 @@
 <a href="//shang.qq.com/wpa/qunwpa?idkey=c1ffcc74ac64e98b1546b94537c581922548a7e63f78a86fcb59cef47988f453">
 <img src="https://img.shields.io/badge/QQ%E7%BE%A4-280891494-informational.svg" target="_blank" alt="酷玩Android你最牛" title="280891494"></a>
 </p>
+
 ----
 
 ## 介绍
@@ -31,35 +32,35 @@ Android只是太多太杂乱，很多人都不知道从何学起。也一些东�
 
 > ### 1、面试&职场
 
-​    :fire: :one: **[BAT大公司面试题集锦](https://github.com/AweiLoveAndroid/CommonDevKnowledge/blob/master/interview/summary.md)**
+:fire: :one: **[BAT大公司面试题集锦](https://github.com/AweiLoveAndroid/CommonDevKnowledge/blob/master/interview/summary.md)**
 这一部分同步发布在我的简书博客，文章地址：[https://www.jianshu.com/p/c70989bd5f29](https://www.jianshu.com/p/c70989bd5f29)
 
 > ### 2、开发文档&开发规范
 
-​    :fire: :one: **[README文档的规范写法](https://github.com/AweiLoveAndroid/CommonDevKnowledge/blob/master/github_README/README%E6%96%87%E6%A1%A3%E7%9A%84%E8%A7%84%E8%8C%83%E5%86%99%E6%B3%95.md)** 
+:fire: :one: **[README文档的规范写法](https://github.com/AweiLoveAndroid/CommonDevKnowledge/blob/master/github_README/README%E6%96%87%E6%A1%A3%E7%9A%84%E8%A7%84%E8%8C%83%E5%86%99%E6%B3%95.md)** 
 这一部分同步发布在我的简书博客，文章地址：[https://www.jianshu.com/p/813b70d5b0de](https://www.jianshu.com/p/813b70d5b0de)
 
 > ### 3、Android技能点整理
 
-​    :point_right: :one:  **[Android开发遇到的坑汇总](https://github.com/AweiLoveAndroid/CommonDevKnowledge/blob/master/Android%E5%BC%80%E5%8F%91%E9%81%87%E5%88%B0%E7%9A%84%E5%9D%91%E6%B1%87%E6%80%BB/Android%E5%BC%80%E5%8F%91%E9%81%87%E5%88%B0%E7%9A%84%E5%9D%91.md)**
+:point_right: :one:  **[Android开发遇到的坑汇总](https://github.com/AweiLoveAndroid/CommonDevKnowledge/blob/master/Android%E5%BC%80%E5%8F%91%E9%81%87%E5%88%B0%E7%9A%84%E5%9D%91%E6%B1%87%E6%80%BB/Android%E5%BC%80%E5%8F%91%E9%81%87%E5%88%B0%E7%9A%84%E5%9D%91.md)**
 
-​    :fire: :one:  **[屏幕适配](https://www.jianshu.com/c/b5d1ce82ee2d)**
+:fire: :one:  **[屏幕适配](https://www.jianshu.com/c/b5d1ce82ee2d)**
 
-​    :fire: :one:  **[Android常用工具类（超级全面，值得收藏）](https://github.com/AweiLoveAndroid/CommonDevKnowledge/blob/master/codes/data_util/com/lzw/data.util/DataUtil.java)**
+:fire: :one:  **[Android常用工具类（超级全面，值得收藏）](https://github.com/AweiLoveAndroid/CommonDevKnowledge/blob/master/codes/data_util/com/lzw/data.util/DataUtil.java)**
 
-​    :point_right: :one:  **[Android中的冷门知识点汇总](https://github.com/AweiLoveAndroid/CommonDevKnowledge/blob/master/Android%E4%B8%AD%E7%9A%84%E5%86%B7%E9%97%A8%E7%9F%A5%E8%AF%86%E7%82%B9%E6%B1%87%E6%80%BB/Android%E4%B8%AD%E7%9A%84%E5%86%B7%E9%97%A8%E7%9F%A5%E8%AF%86%E6%B1%87%E6%80%BB.md)**
+:point_right: :one:  **[Android中的冷门知识点汇总](https://github.com/AweiLoveAndroid/CommonDevKnowledge/blob/master/Android%E4%B8%AD%E7%9A%84%E5%86%B7%E9%97%A8%E7%9F%A5%E8%AF%86%E7%82%B9%E6%B1%87%E6%80%BB/Android%E4%B8%AD%E7%9A%84%E5%86%B7%E9%97%A8%E7%9F%A5%E8%AF%86%E6%B1%87%E6%80%BB.md)**
 
-​    :pencil: :one: **[双击back退出app](https://github.com/AweiLoveAndroid/CommonDevKnowledge/blob/master/%E5%8F%8C%E5%87%BBback%E9%80%80%E5%87%BAapp/%E5%8F%8C%E5%87%BBback%E9%80%80%E5%87%BAapp.md)**
+:pencil: :one: **[双击back退出app](https://github.com/AweiLoveAndroid/CommonDevKnowledge/blob/master/%E5%8F%8C%E5%87%BBback%E9%80%80%E5%87%BAapp/%E5%8F%8C%E5%87%BBback%E9%80%80%E5%87%BAapp.md)**
 
-​    :pencil: :one:  **应用角标的实现（待完善）**
+:pencil: :one:  **应用角标的实现（待完善）**
 
-​    :pencil: :one:  **利用原生api实现分享等功能（待完善）**
+:pencil: :one:  **利用原生api实现分享等功能（待完善）**
 
-​    :pencil: :one: **二维码处理（待完善）**
+:pencil: :one: **二维码处理（待完善）**
 
 > ### 4、开源库整理
 
-​    :fire: :one: **[全面总结国内BATH等大厂开源的安卓有关的库](https://github.com/AweiLoveAndroid/CommonDevKnowledge/blob/master/%E5%9B%BD%E5%86%85BATH%E7%AD%89%E5%A4%A7%E5%8E%82%E5%BC%80%E6%BA%90%E7%9A%84%E5%AE%89%E5%8D%93%E6%9C%89%E5%85%B3%E7%9A%84%E5%BA%93/%E5%85%A8%E9%9D%A2%E6%80%BB%E7%BB%93%E5%9B%BD%E5%86%85BATH%E7%AD%89%E5%A4%A7%E5%8E%82%E5%BC%80%E6%BA%90%E7%9A%84%E5%AE%89%E5%8D%93%E6%9C%89%E5%85%B3%E7%9A%84%E5%BA%93.md)** 这一部分同步发布在我的简书博客，文章地址：[https://www.jianshu.com/p/2a6c806ba2fc](https://www.jianshu.com/p/2a6c806ba2fc)
+:fire: :one: **[全面总结国内BATH等大厂开源的安卓有关的库](https://github.com/AweiLoveAndroid/CommonDevKnowledge/blob/master/%E5%9B%BD%E5%86%85BATH%E7%AD%89%E5%A4%A7%E5%8E%82%E5%BC%80%E6%BA%90%E7%9A%84%E5%AE%89%E5%8D%93%E6%9C%89%E5%85%B3%E7%9A%84%E5%BA%93/%E5%85%A8%E9%9D%A2%E6%80%BB%E7%BB%93%E5%9B%BD%E5%86%85BATH%E7%AD%89%E5%A4%A7%E5%8E%82%E5%BC%80%E6%BA%90%E7%9A%84%E5%AE%89%E5%8D%93%E6%9C%89%E5%85%B3%E7%9A%84%E5%BA%93.md)** 这一部分同步发布在我的简书博客，文章地址：[https://www.jianshu.com/p/2a6c806ba2fc](https://www.jianshu.com/p/2a6c806ba2fc)
 
 ----
 
@@ -90,7 +91,7 @@ Android只是太多太杂乱，很多人都不知道从何学起。也一些东�
 
 ###  ●  QQ群：
 
-> 2千人QQ群，**Android学习开发交流群，QQ群号：695025386**， 欢迎大家加入讨论。
+> 2千人QQ群，**Android学习开发交流群，QQ群号：280891494**， 欢迎大家加入讨论。
 
 **欢迎大家在issues里面提出宝贵的建议，如果你有更多面试题，欢迎在issues里面提供，同时也欢迎各位积极作答。帮助别人的同时也是对自己知识点的巩固和提高。**
 
