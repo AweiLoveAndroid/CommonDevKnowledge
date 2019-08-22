@@ -16,7 +16,6 @@
 <a href="//shang.qq.com/wpa/qunwpa?idkey=c1ffcc74ac64e98b1546b94537c581922548a7e63f78a86fcb59cef47988f453">
 <img src="https://img.shields.io/badge/QQ%E7%BE%A4-280891494-informational.svg" target="_blank" alt="酷玩Android你最牛" title="280891494"></a>
 </p>
-
 ----
 
 ## 介绍
@@ -58,7 +57,12 @@ Android只是太多太杂乱，很多人都不知道从何学起。也一些东�
 
 :pencil: :one: **二维码处理（待完善）**
 
-> ### 4、开源库整理
+> ### 4、Java知识点解读
+
+**设计模式：** [Java23种设计模式](design_patterns)
+
+
+> ### 5、开源库整理
 
 :fire: :one: **[全面总结国内BATH等大厂开源的安卓有关的库](https://github.com/AweiLoveAndroid/CommonDevKnowledge/blob/master/%E5%9B%BD%E5%86%85BATH%E7%AD%89%E5%A4%A7%E5%8E%82%E5%BC%80%E6%BA%90%E7%9A%84%E5%AE%89%E5%8D%93%E6%9C%89%E5%85%B3%E7%9A%84%E5%BA%93/%E5%85%A8%E9%9D%A2%E6%80%BB%E7%BB%93%E5%9B%BD%E5%86%85BATH%E7%AD%89%E5%A4%A7%E5%8E%82%E5%BC%80%E6%BA%90%E7%9A%84%E5%AE%89%E5%8D%93%E6%9C%89%E5%85%B3%E7%9A%84%E5%BA%93.md)** 这一部分同步发布在我的简书博客，文章地址：[https://www.jianshu.com/p/2a6c806ba2fc](https://www.jianshu.com/p/2a6c806ba2fc)
 
